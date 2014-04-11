@@ -1,3 +1,5 @@
+##(NOTE: This is PRE-RELEASE until I finish a few things and push the Podspec)
+
 # DBGHTMLEntities
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
