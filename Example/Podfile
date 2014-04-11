@@ -1,7 +1,9 @@
+platform :ios, '7.0'
+
 pod "DBGHTMLEntities", :path => "../"
 
-target "Demo" do
+target :DBGHTMLEntitiesExampleTests do
+  pod 'Specta',      '~> 0.2.1'
+  pod 'Expecta',     '~> 0.3.0'
 end
 
-target "DemoTests" do
-end
