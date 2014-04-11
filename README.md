@@ -55,7 +55,8 @@ it simply add the following line to your Podfile:
 
 ## Inspiration
 
-This was essentially ported from the [htmlentities](https://github.com/threedaymonk/htmlentities) RubyGem by [Paul Battley](https://github.com/threedaymonk). 
+This was essentially a lazy port from the [htmlentities](https://github.com/threedaymonk/htmlentities) RubyGem by [Paul Battley](https://github.com/threedaymonk). Paul did a much better job of (optionally) supporting the expanded set of HTML Entity
+strings as well as the pretty essential funtion of encoding.
 
 ## License
 

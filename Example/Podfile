@@ -2,6 +2,8 @@ platform :ios, '7.0'
 
 pod "DBGHTMLEntities", :path => "../"
 
+pod 'ORStackView'
+
 target :DBGHTMLEntitiesExampleTests do
   pod 'Specta',      '~> 0.2.1'
   pod 'Expecta',     '~> 0.3.0'

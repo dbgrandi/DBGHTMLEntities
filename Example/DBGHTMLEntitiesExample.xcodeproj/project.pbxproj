@@ -20,10 +20,8 @@
 		554BF50A18F718E700AC2DE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4F218F718E600AC2DE0 /* UIKit.framework */; };
 		554BF51218F718E700AC2DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BF51018F718E700AC2DE0 /* InfoPlist.strings */; };
 		554BF52018F7217A00AC2DE0 /* DecoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */; };
-		554BF52A18F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF52918F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m */; };
-		554BF52B18F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF52918F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m */; };
 		554BF52E18F7297500AC2DE0 /* DecodeMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */; };
-		554BF53118F744F500AC2DE0 /* DBGHTMLEntityDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53018F744F500AC2DE0 /* DBGHTMLEntityDecoder.m */; };
+		554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */; };
 		BF1190026F124813A95C98FE /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA0A3C6876F4AC8886ABF01 /* libPods-DBGHTMLEntitiesExampleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +59,8 @@
 		554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DecodeMapSpec.m; path = ../../Tests/DecodeMapSpec.m; sourceTree = "<group>"; };
 		554BF52F18F744F500AC2DE0 /* DBGHTMLEntityDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityDecoder.h; path = ../Classes/DBGHTMLEntityDecoder.h; sourceTree = "<group>"; };
 		554BF53018F744F500AC2DE0 /* DBGHTMLEntityDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityDecoder.m; path = ../Classes/DBGHTMLEntityDecoder.m; sourceTree = "<group>"; };
+		554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGExampleViewController.h; sourceTree = "<group>"; };
+		554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGExampleViewController.m; sourceTree = "<group>"; };
 		BFA0A3C6876F4AC8886ABF01 /* libPods-DBGHTMLEntitiesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF074589EF94508A7084FF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +133,8 @@
 				554BF4FE18F718E600AC2DE0 /* DBGAppDelegate.m */,
 				554BF50018F718E600AC2DE0 /* Images.xcassets */,
 				554BF4F518F718E600AC2DE0 /* Supporting Files */,
+				554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */,
+				554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */,
 			);
 			path = DBGHTMLEntitiesExample;
 			sourceTree = "<group>";
@@ -341,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554BF52A18F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m in Sources */,
+				554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */,
 				554BF4FF18F718E600AC2DE0 /* DBGAppDelegate.m in Sources */,
 				554BF4FB18F718E600AC2DE0 /* main.m in Sources */,
 			);
@@ -351,8 +353,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554BF53118F744F500AC2DE0 /* DBGHTMLEntityDecoder.m in Sources */,
-				554BF52B18F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m in Sources */,
 				554BF52E18F7297500AC2DE0 /* DecodeMapSpec.m in Sources */,
 				554BF52018F7217A00AC2DE0 /* DecoderSpec.m in Sources */,
 			);
