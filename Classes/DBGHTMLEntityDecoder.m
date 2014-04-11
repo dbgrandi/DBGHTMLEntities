@@ -14,41 +14,46 @@ static NSString *DBGEntityRegexString = @"&(?:([a-z][a-z0-9]{2,6})|#([0-9]{1,7})
 @implementation DBGHTMLEntityDecoder
 
 - (NSArray *)entitiesInString:(NSString *)string {
+    if ([string rangeOfString:@"&"].location == NSNotFound) {
+        return @[];
+    }
+
     NSError *error = NULL;
-    NSRegularExpression *entityRegex =
+    NSRegularExpression *regex =
         [NSRegularExpression regularExpressionWithPattern:DBGEntityRegexString
                                                   options:NSRegularExpressionCaseInsensitive
                                                     error:&error];
-    
-    if (error) {
-        NSLog(@"Could not create Regular Expression with string %@", DBGEntityRegexString);
-    }
-    
-    return [entityRegex matchesInString:string options:0 range:NSMakeRange(0, [string length])];
+    NSAssert(!error, @"Error while creating NSRegularExpression");
+
+    return [regex matchesInString:string options:0 range:NSMakeRange(0, [string length])];
 }
 
 - (NSString *)decodeString:(NSString *)string {
-    NSArray *matches = [self entitiesInString:string];
+    NSMutableString *mutableString = [string mutableCopy];
+    [self decodeStringInPlace:mutableString];
+
+    return [NSString stringWithString:mutableString];
+}
+
+- (void)decodeStringInPlace:(NSMutableString *)mutableString {
+    NSArray *matches = [self entitiesInString:mutableString];
 
     if ([matches count] == 0) {
-        return string;
+        return;
     }
 
-    NSMutableString *mutableString = [string mutableCopy];
     DBGHTMLEntityDecodeMap *decodeMap = [[DBGHTMLEntityDecodeMap alloc] init];
 
     // go in reverse to keep the integrity of match ranges
     [matches enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         NSTextCheckingResult *match = (NSTextCheckingResult *)obj;
-        NSString *matchText = [string substringWithRange:match.range];
-        
+        NSString *matchText = [mutableString substringWithRange:match.range];
+
         NSString *decodedText = decodeMap[matchText];
         if (decodedText != matchText) {
             [mutableString replaceCharactersInRange:match.range withString:decodedText];
         }
     }];
-
-    return [NSString stringWithString:mutableString];
 }
 
 @end

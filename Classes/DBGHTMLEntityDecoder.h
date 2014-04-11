@@ -14,8 +14,13 @@
 - (NSArray *)entitiesInString:(NSString *)string;
 
 /**
- * Decode all the entities within a string.
+ * Decode all the entities within a string, returning a new string.
  */
 - (NSString *)decodeString:(NSString *)string;
+
+/**
+ * Decode all the entities in place for a mutable string.
+ */
+- (void)decodeStringInPlace:(NSMutableString *)mutableString;
 
 @end
