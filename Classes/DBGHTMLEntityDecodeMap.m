@@ -283,7 +283,7 @@
 - (id)objectForKeyedSubscript:(id <NSCopying>)key {
     NSString *keyString = (NSString *)key;
     if (![keyString hasPrefix:@"&"] || ![keyString hasSuffix:@";"]) {
-        return key;
+        return nil;
     }
     
     // strip off the '&' and ';'
@@ -309,8 +309,8 @@
         return [NSString stringWithFormat: @"%C", (unichar)[value intValue]];
     }
     
-    // at this point, it's NOT a valid encoding. return the original key
-    return key;
+    // at this point, it's NOT a valid entity.
+    return nil;
 }
 
 @end

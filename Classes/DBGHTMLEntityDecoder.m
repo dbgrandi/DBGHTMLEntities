@@ -50,7 +50,7 @@ static NSString *DBGEntityRegexString = @"&(?:([a-z][a-z0-9]{2,6})|#([0-9]{1,7})
         NSString *matchText = [mutableString substringWithRange:match.range];
 
         NSString *decodedText = decodeMap[matchText];
-        if (decodedText != matchText) {
+        if (decodedText) {
             [mutableString replaceCharactersInRange:match.range withString:decodedText];
         }
     }];

@@ -49,13 +49,10 @@ describe(@"DecodeMapSpec", ^{
     });
     
     it(@"should not decode jibberish", ^{
-        expect(decodeMap[@"&abacadabba;"]).to.equal(@"&abacadabba;");
-        expect(decodeMap[@"1"]).to.equal(@"1");
-        expect(decodeMap[@"&;"]).to.equal(@"&;");
-    });
-    
-    it(@"should decode an empty key", ^{
-        expect(decodeMap[@""]).to.equal(@"");
+        expect(decodeMap[@"&abacadabba;"]).to.beNil();
+        expect(decodeMap[@"1"]).to.beNil();
+        expect(decodeMap[@"&;"]).to.beNil();
+        expect(decodeMap[@""]).to.beNil();
     });
 
 });
