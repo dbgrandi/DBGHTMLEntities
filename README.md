@@ -9,6 +9,8 @@
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
+Or, for the easiest, run `pod try DBGHTMLEntities`
+
 ### Decoding an `NSString`
 
 To do a simple string decode:
@@ -51,7 +53,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-David Grandinetti, <dave@wegoto12.com>
+David Grandinetti, dave@wegoto12.com
 
 ## Inspiration
 
