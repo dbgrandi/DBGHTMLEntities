@@ -8,8 +8,11 @@
 
 @interface DBGHTMLEntityDecodeMap : NSObject
 
+/**
+ * Support keyed subscript (e.g. map[@"quot"]) interaction. This will
+ * return the key if no mapping can be done. This MAY change to return
+ * nil in the future.
+ */
 - (id)objectForKeyedSubscript:(id <NSCopying>)key;
-
-//- (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
 
 @end
