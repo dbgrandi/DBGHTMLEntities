@@ -20,7 +20,11 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-David Grandinetti, dave@wegoto12.com
+David Grandinetti, <dave@wegoto12.com>
+
+## Inspiration
+
+This was essentially ported from the [htmlentities](https://github.com/threedaymonk/htmlentities) RubyGem by [Paul Battley](https://github.com/threedaymonk). 
 
 ## License
 
