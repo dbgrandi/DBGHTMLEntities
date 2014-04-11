@@ -13,28 +13,34 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 To do a simple string decode:
 
-    NSString *encodedString = @"Texas A&amp;M needs decoding.";
-    DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
-    NSString *decodedString = [decoder decodeString:encodedString];
+``` objc
+NSString *encodedString = @"Texas A&amp;M needs decoding.";
+DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
+NSString *decodedString = [decoder decodeString:encodedString];
+```
 
 If you have an NSMutableString you can decode in place using:
 
-    NSMutableString *encodedString = @"OH: &quot;Parse all the strings!&quot;";
-    DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
-    [decoder decodeStringInPlace:encodedString];
+``` objc
+NSMutableString *encodedString = @"OH: &quot;Parse all the strings!&quot;";
+DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
+[decoder decodeStringInPlace:encodedString];
+```
 
 The second method, `decodeStringInPlace:` was created explicitly for an issue I had while manipulating NSAttributedStrings to show Tweets with highlighted hashtags, user mentions, and proper URLs based on the [Tweet entities](https://dev.twitter.com/docs/entities). I ended up setting up highlighting attributes on parts of an `NSMutableAttributedString` and then calling `decodeStringInPlace:`
 
-    NSMutableAttributedString *tweetString = ...
-    
-    // highlight user_mentions
-    // highlight hashtags
-    // replace urls
-    
-    DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
-    [decoder decodeStringInPlace:tweetString.mutableString];
-    
-    tweetLabel.attributedText = tweetString;
+``` objc
+NSMutableAttributedString *tweetString = ...
+
+// highlight user_mentions
+// highlight hashtags
+// replace urls
+
+DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
+[decoder decodeStringInPlace:tweetString.mutableString];
+
+tweetLabel.attributedText = tweetString;
+```
 
 ## Installation
 
