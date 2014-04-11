@@ -11,8 +11,6 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 Or, for the easiest, run `pod try DBGHTMLEntities`
 
-### Decoding an `NSString`
-
 To do a simple string decode:
 
 ``` objc
@@ -53,7 +51,7 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-David Grandinetti, dave@wegoto12.com
+[David Grandinetti](http://twitter.com/dbgrandi), dbgrandi@gmail.com
 
 ## Inspiration
 
