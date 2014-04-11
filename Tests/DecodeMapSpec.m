@@ -57,6 +57,7 @@ describe(@"DecodeMapSpec", ^{
     it(@"should decode an empty key", ^{
         expect(decodeMap[@""]).to.equal(@"");
     });
+
 });
 
 SpecEnd

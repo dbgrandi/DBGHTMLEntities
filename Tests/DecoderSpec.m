@@ -39,7 +39,7 @@ describe(@"DecoderSpec", ^{
             expect([matches count]).to.equal(6);
         });
         
-        it(@"matches the whole entity", ^{
+        it(@"matches all the entities", ^{
             NSTextCheckingResult *match = matches[0];
             expect([input substringWithRange:match.range]).to.equal(@"&quot;");
 
@@ -77,6 +77,10 @@ describe(@"DecoderSpec", ^{
     
     it(@"should decode a double encoded entity once", ^{
         expect([decoder decodeString:@"&amp;amp;"]).to.equal(@"&amp;");
+    });
+    
+    it(@"should only decode the first element in masked entities", ^{
+        expect([decoder decodeString:@"&amp;#3346;"]).to.equal(@"&#3346;");
     });
 
 });
