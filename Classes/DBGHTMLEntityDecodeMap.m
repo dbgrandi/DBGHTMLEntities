@@ -8,15 +8,9 @@
 
 #import "DBGHTMLEntityDecodeMap.h"
 
-@interface DBGHTMLEntityDecodeMap ()
-
-@property (nonatomic, readonly, strong) NSDictionary *map;
-
-@end
-
 @implementation DBGHTMLEntityDecodeMap
 
-- (NSDictionary *)map {
+- (NSDictionary *)rawMap {
     static NSDictionary *_sharedMap = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -303,9 +297,9 @@
         if ([scanner scanInt:&tempInt]) {
             return [NSString stringWithFormat:@"%C", (unichar)tempInt];
         }
-    } else if (self.map[rawKey]) {
+    } else if (self.rawMap[rawKey]) {
         // it exists as a named mapping
-        NSNumber *value = self.map[rawKey];
+        NSNumber *value = self.rawMap[rawKey];
         return [NSString stringWithFormat: @"%C", (unichar)[value intValue]];
     }
     

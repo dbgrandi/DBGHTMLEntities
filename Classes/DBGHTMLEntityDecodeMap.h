@@ -9,9 +9,14 @@
 @interface DBGHTMLEntityDecodeMap : NSObject
 
 /**
+ * The raw NSDictionary used for named mappings. This is
+ * mostly exposed for use by the encoder.
+ */
+@property (nonatomic, readonly, strong) NSDictionary *rawMap;
+
+/**
  * Support keyed subscript (e.g. map[@"quot"]) interaction. This will
- * return the key if no mapping can be done. This MAY change to return
- * nil in the future.
+ * return the nil if no mapping can be done.
  */
 - (id)objectForKeyedSubscript:(id <NSCopying>)key;
 
