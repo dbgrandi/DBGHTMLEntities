@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_DBGHTMLEntitiesExampleTests_DBGHTMLEntities : NSObject
-@end
-@implementation PodsDummy_Pods_DBGHTMLEntitiesExampleTests_DBGHTMLEntities
-@end
