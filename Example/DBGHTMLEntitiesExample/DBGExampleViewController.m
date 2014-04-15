@@ -16,61 +16,73 @@
     ORStackScrollView *stackScrollView = [[ORStackScrollView alloc] init];
     stackScrollView.backgroundColor = [UIColor whiteColor];
     self.view = stackScrollView;
-    
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    ORStackView *stackView = stackScrollView.stackView;
-    
-    DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
-    
-    UIFont *explainFont = [UIFont fontWithName:@"AvenirNext-Medium" size:22];
-    UIFont *labelFont = [UIFont fontWithName:@"AvenirNext-Regular" size:22];
 
-    UILabel *explainLabel = [[UILabel alloc] init];
-    explainLabel.font = explainFont;
-    explainLabel.numberOfLines = 0;
-    explainLabel.text = @"Labels with NSStrings.";
+    ORStackView *stackView = stackScrollView.stackView;
+
+    DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
+
+    //
+    // examples with NSString, one is regular, the other is decoded
+    //
+    UILabel *explainLabel = [self explainLabelWithText:@"Labels with NSStrings."];
     [stackView addSubview:explainLabel withTopMargin:@"50" sideMargin:@"20"];
-    
-    // add a label with basic string
-    UILabel *basicStringLabel = [[UILabel alloc] init];
-    basicStringLabel.font = labelFont;
-    basicStringLabel.numberOfLines = 0;
-    basicStringLabel.text = [self basicString];
+
+    UILabel *basicStringLabel = [self basicLabelWithText:[self basicString]];
     [stackView addSubview:basicStringLabel withTopMargin:@"10" sideMargin:@"20"];
 
-    // add a label with basic escaped string
-    UILabel *escapedBasicStringLabel = [[UILabel alloc] init];
-    escapedBasicStringLabel.font = labelFont;
-    escapedBasicStringLabel.numberOfLines = 0;
-    escapedBasicStringLabel.text = [decoder decodeString:[self basicString]];
+    UILabel *escapedBasicStringLabel = [self basicLabelWithText:[decoder decodeString:[self basicString]]];
     [stackView addSubview:escapedBasicStringLabel withTopMargin:@"10" sideMargin:@"20"];
-    
-    UILabel *explain2Label = [[UILabel alloc] init];
-    explain2Label.font = explainFont;
-    explain2Label.numberOfLines = 0;
-    explain2Label.text = @"Labels with NSAttributedStrings.";
+
+    //
+    // examples with NSAttributedString, one regular, one decoded
+    //
+    UILabel *explain2Label = [self explainLabelWithText:@"Labels with NSAttributedStrings."];
     [stackView addSubview:explain2Label withTopMargin:@"50" sideMargin:@"20"];
 
-    // add a label with attributed string
-    UILabel *attributedStringLabel = [[UILabel alloc] init];
-    attributedStringLabel.numberOfLines = 0;
-    attributedStringLabel.attributedText = [self tweetString];
+    UILabel *attributedStringLabel = [self attributedLabelWithText:[self tweetString]];
     [stackView addSubview:attributedStringLabel withTopMargin:@"10" sideMargin:@"20"];
 
     NSMutableAttributedString *tweetString = [self tweetString];
     NSMutableString *mutableTweetString = tweetString.mutableString;
     [decoder decodeStringInPlace:mutableTweetString];
 
-    // add a label with attributed escaped string
-    UILabel *escapedAttributedStringLabel = [[UILabel alloc] init];
-    escapedAttributedStringLabel.numberOfLines = 0;
-    escapedAttributedStringLabel.attributedText = tweetString;
+    UILabel *escapedAttributedStringLabel = [self attributedLabelWithText:tweetString];
     [stackView addSubview:escapedAttributedStringLabel withTopMargin:@"10" sideMargin:@"20"];
+
     
     UIView *footerSpacer = [[UIView alloc] init];
     [stackView addSubview:footerSpacer withTopMargin:@"40"];
 }
+
+#pragma mark - Label generators
+
+- (UILabel *)explainLabelWithText:(NSString *)text {
+    UILabel *label = [[UILabel alloc] init];
+    label.font = [UIFont fontWithName:@"AvenirNext-Medium" size:22];
+    label.numberOfLines = 0;
+    label.text = text;
+    
+    return label;
+}
+
+- (UILabel *)basicLabelWithText:(id)text {
+    UILabel *label = [[UILabel alloc] init];
+    label.numberOfLines = 0;
+    label.font = [UIFont fontWithName:@"AvenirNext-Regular" size:22];
+    label.text = text;
+    
+    return label;
+}
+
+- (UILabel *)attributedLabelWithText:(NSAttributedString *)attributedText {
+    UILabel *label = [[UILabel alloc] init];
+    label.numberOfLines = 0;
+    label.attributedText = attributedText;
+    
+    return label;
+}
+
+#pragma mark - String generators
 
 - (NSString *)basicString {
     return @"Today &amp; tomorrow only, we&apos;ve got extra pies to give out. Not to be confused with &#960; #betterthandonuts, cc/ @dbgrandi";
