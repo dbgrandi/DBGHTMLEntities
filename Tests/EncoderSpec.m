@@ -21,30 +21,41 @@ describe(@"EncoderSpec", ^{
     before(^{
         encoder = [[DBGHTMLEntityEncoder alloc] init];
     });
+    
+    it(@"should detect if a string needs encoding", ^{
+        expect([encoder stringNeedsEncoding:@"asdf"]).to.beFalsy();
+        expect([encoder stringNeedsEncoding:@"`"]).to.beFalsy();
 
-    it(@"should encode text using mix of entities", ^{
-        NSString *original = @"\"bientôt\" & 文字";
-
-        // :basic, :named, :hexadecimal
-        expect([encoder encode:original]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#x6587;&#x5b57;");
-
-        // :basic, :named, :decimal
-        expect([encoder encode:original]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#25991;&#23383;");
-    });
-
-    it(@"should sort commands when encoding using mix of entities", ^{
-        NSString *original = @"\"bientôt\" & 文字";
-
-        // :named, :hexadecimal, :basic
-        expect([encoder encode:original]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#x6587;&#x5b57;");
-
-        // :decimal, :named, :basic
-        expect([encoder encode:original]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#25991;&#23383;");
+        expect([encoder stringNeedsEncoding:@"&"]).to.beTruthy();
+        expect([encoder stringNeedsEncoding:@"'"]).to.beTruthy();
+        expect([encoder stringNeedsEncoding:@">"]).to.beTruthy();
+        expect([encoder stringNeedsEncoding:@"<"]).to.beTruthy();
+        expect([encoder stringNeedsEncoding:@"文字"]).to.beTruthy();
     });
 
     it(@"should not encode normal ASCII", ^{
         expect([encoder encode:@"`"]).to.equal(@"`");
         expect([encoder encode:@" "]).to.equal(@" ");
+        expect([encoder encode:@"Nothing to encode here."]).to.equal(@"Nothing to encode here.");
+    });
+
+    it(@"should parse the correct number of ranges", ^{
+        NSCharacterSet *basicEntities = [encoder basicEntitiesCharacterSet];
+        expect([[encoder rangesOfCharacters:basicEntities string:@"<html>"] count]).to.equal(2);
+    });
+
+    it(@"should default to encoding basic entities as basic", ^{
+        expect([encoder encode:@"<html>"]).to.equal(@"&lt;html&gt;");
+    });
+
+    it(@"should encode text using mix of entities", ^{
+        NSString *original = @"\"bientôt\" & 文字";
+
+        DBGHTMLEntityEncoderFormats namedAndHex = (DBGHTMLEntityEncoderNamedFormat | DBGHTMLEntityEncoderHexFormat);
+        expect([encoder encode:original withFormats:namedAndHex]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#x6587;&#x5b57;");
+
+        DBGHTMLEntityEncoderFormats namedAndDecimal = (DBGHTMLEntityEncoderNamedFormat | DBGHTMLEntityEncoderDecimalFormat);
+        expect([encoder encode:original withFormats:namedAndDecimal]).to.equal(@"&quot;bient&ocirc;t&quot; &amp; &#25991;&#23383;");
     });
 
     it(@"should double encode existing entity", ^{
