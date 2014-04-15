@@ -161,11 +161,11 @@
 		554BF50D18F718E700AC2DE0 /* DBGHTMLEntitiesExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */,
-				554BF50E18F718E700AC2DE0 /* Supporting Files */,
 				554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */,
-				55513FB118FC613F00EAF893 /* EncoderSpec.m */,
+				554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */,
 				55513FB718FC83C000EAF893 /* EncoderMapSpec.m */,
+				55513FB118FC613F00EAF893 /* EncoderSpec.m */,
+				554BF50E18F718E700AC2DE0 /* Supporting Files */,
 			);
 			path = DBGHTMLEntitiesExampleTests;
 			sourceTree = "<group>";

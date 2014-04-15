@@ -23,42 +23,42 @@ describe(@"EncoderMapSpec", ^{
     });
     
     it(@"should encode basic entities", ^{
-        expect([encodeMap encodeAsNamed:[@"&" characterAtIndex:0]]).to.equal(@"&amp;");
-        expect([encodeMap encodeAsNamed:[@"\"" characterAtIndex:0]]).to.equal(@"&quot;");
-        expect([encodeMap encodeAsNamed:[@"<" characterAtIndex:0]]).to.equal(@"&lt;");
+        expect([encodeMap encodeAsNamed:'&']).to.equal(@"&amp;");
+        expect([encodeMap encodeAsNamed:'"']).to.equal(@"&quot;");
+        expect([encodeMap encodeAsNamed:'<']).to.equal(@"&lt;");
     });
 
     it(@"should encode basic entities to decimal", ^{
-        expect([encodeMap encodeAsDecimal:[@"&" characterAtIndex:0]]).to.equal(@"&#38;");
-        expect([encodeMap encodeAsDecimal:[@"\"" characterAtIndex:0]]).to.equal(@"&#34;");
-        expect([encodeMap encodeAsDecimal:[@"<" characterAtIndex:0]]).to.equal(@"&#60;");
-        expect([encodeMap encodeAsDecimal:[@">" characterAtIndex:0]]).to.equal(@"&#62;");
-        expect([encodeMap encodeAsDecimal:[@"'" characterAtIndex:0]]).to.equal(@"&#39;");
+        expect([encodeMap encodeAsDecimal:'&']).to.equal(@"&#38;");
+        expect([encodeMap encodeAsDecimal:'"']).to.equal(@"&#34;");
+        expect([encodeMap encodeAsDecimal:'<']).to.equal(@"&#60;");
+        expect([encodeMap encodeAsDecimal:'>']).to.equal(@"&#62;");
+        expect([encodeMap encodeAsDecimal:'\'']).to.equal(@"&#39;");
     });
     
     it(@"should encode basic entities to hexadecimal", ^{
-        expect([encodeMap encodeAsHex:[@"&" characterAtIndex:0]]).to.equal(@"&#x26;");
-        expect([encodeMap encodeAsHex:[@"\"" characterAtIndex:0]]).to.equal(@"&#x22;");
-        expect([encodeMap encodeAsHex:[@"<" characterAtIndex:0]]).to.equal(@"&#x3c;");
-        expect([encodeMap encodeAsHex:[@">" characterAtIndex:0]]).to.equal(@"&#x3e;");
-        expect([encodeMap encodeAsHex:[@"'" characterAtIndex:0]]).to.equal(@"&#x27;");
+        expect([encodeMap encodeAsHex:'&']).to.equal(@"&#x26;");
+        expect([encodeMap encodeAsHex:'"']).to.equal(@"&#x22;");
+        expect([encodeMap encodeAsHex:'<']).to.equal(@"&#x3c;");
+        expect([encodeMap encodeAsHex:'>']).to.equal(@"&#x3e;");
+        expect([encodeMap encodeAsHex:'\'']).to.equal(@"&#x27;");
     });
     
     it(@"should encode extended named entities", ^{
-        expect([encodeMap encodeAsNamed:[@"±" characterAtIndex:0]]).to.equal(@"&plusmn;");
-        expect([encodeMap encodeAsNamed:[@"ð" characterAtIndex:0]]).to.equal(@"&eth;");
-        expect([encodeMap encodeAsNamed:[@"Œ" characterAtIndex:0]]).to.equal(@"&OElig;");
-        expect([encodeMap encodeAsNamed:[@"œ" characterAtIndex:0]]).to.equal(@"&oelig;");
+        expect([encodeMap encodeAsNamed:L'±']).to.equal(@"&plusmn;");
+        expect([encodeMap encodeAsNamed:L'ð']).to.equal(@"&eth;");
+        expect([encodeMap encodeAsNamed:L'Œ']).to.equal(@"&OElig;");
+        expect([encodeMap encodeAsNamed:L'œ']).to.equal(@"&oelig;");
     });
     
     it(@"should encode decimal entities", ^{
-        expect([encodeMap encodeAsDecimal:[@"“" characterAtIndex:0]]).to.equal(@"&#8220;");
-//        expect([encodeMap encodeAsDecimal:[@"…"]).to.equal(@"&#8230;");
+        expect([encodeMap encodeAsDecimal:L'“']).to.equal(@"&#8220;");
+        expect([encodeMap encodeAsDecimal:L'…']).to.equal(@"&#8230;");
     });
     
     it(@"should encode hexadecimal entities", ^{
-//        expect([encodeMap encode:@"−"]).to.equal("&#x2212;");
-//        expect([encodeMap encode:@"—"]).to.equal("&#x2014;");
+        expect([encodeMap encodeAsHex:L'−']).to.equal(@"&#x2212;");
+        expect([encodeMap encodeAsHex:L'—']).to.equal(@"&#x2014;");
     });
 
 });
