@@ -1,7 +1,7 @@
 language: objective-c
 before_install:
-    - open -a iPhone\ Simulator
-    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-    - cd Example
     - export LANG=en_US.UTF-8
-script: xctool -workspace DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample build test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO    
+    - gem install cocoapods xcpretty -N
+    - cd Example && pod install
+    - cd ..
+  script: xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator test | xcpretty -c
