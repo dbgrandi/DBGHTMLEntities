@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "554BF4EA18F718E600AC2DE0"
-               BuildableName = "DBGHTMLEntitiesExample.app"
-               BlueprintName = "DBGHTMLEntitiesExample"
-               ReferencedContainer = "container:DBGHTMLEntitiesExample.xcodeproj">
+               BlueprintIdentifier = "87FFA29D0CEE4F668EE098AA"
+               BuildableName = "libPods.a"
+               BlueprintName = "Pods"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87FFA29D0CEE4F668EE098AA"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "554BF4EA18F718E600AC2DE0"
+               BuildableName = "DBGHTMLEntitiesExample.app"
+               BlueprintName = "DBGHTMLEntitiesExample"
+               ReferencedContainer = "container:DBGHTMLEntitiesExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
