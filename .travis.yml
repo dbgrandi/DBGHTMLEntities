@@ -3,4 +3,4 @@ before_install:
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - cd Example
     - export LANG=en_US.UTF-8
-script: xctool -workspace Example/DBGHTMLEntities.xcworkspace -scheme DBGHTMLEntitiesExample test -only DBGHTMLEntitiesExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO    
+script: xctool -workspace DBGHTMLEntities.xcworkspace -scheme DBGHTMLEntitiesExample test -only DBGHTMLEntitiesExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO    
