@@ -1,3 +1,9 @@
 language: objective-c
-before_install: ./travis-before.sh
-script: ./travis-test.sh
+
+before_install:
+    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+    - cd Example
+    
+xcode_workspace: DBGHTMLEntitiesExample.xcworkspace
+xcode_scheme: Example
+xcode_sdk: iphonesimulator
