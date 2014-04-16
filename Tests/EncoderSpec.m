@@ -40,8 +40,8 @@ describe(@"EncoderSpec", ^{
     });
 
     it(@"should parse the correct number of ranges", ^{
-        NSCharacterSet *basicEntities = [encoder basicEntitiesCharacterSet];
-        expect([[encoder rangesOfCharacters:basicEntities string:@"<html>"] count]).to.equal(2);
+        NSCharacterSet *gtltCharacters = [NSCharacterSet characterSetWithCharactersInString:@"<>"];
+        expect([[encoder rangesOfCharacters:gtltCharacters string:@"<html>"] count]).to.equal(2);
     });
 
     it(@"should default to encoding basic entities as basic", ^{

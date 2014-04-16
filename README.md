@@ -1,5 +1,3 @@
-##(NOTE: This is PRE-RELEASE until I finish a few things and push the Podspec)
-
 # DBGHTMLEntities
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
@@ -55,8 +53,8 @@ it simply add the following line to your Podfile:
 
 ## Inspiration
 
-This was essentially a lazy port from the [htmlentities](https://github.com/threedaymonk/htmlentities) RubyGem by [Paul Battley](https://github.com/threedaymonk). Paul did a much better job of (optionally) supporting the expanded set of HTML Entity
-strings as well as the pretty essential funtion of encoding.
+This was essentially a lazy port from the [htmlentities](https://github.com/threedaymonk/htmlentities) RubyGem by [Paul Battley](https://github.com/threedaymonk). Paul did a better job of providing more granular options. I really just needed
+the decoder options, so the encoder is not as configurable as his, yet.
 
 ## License
 

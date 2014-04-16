@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4F569FD9392A4C10A25F3EEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF074589EF94508A7084FF6 /* libPods.a */; };
+		5513F52D18FDE43F0029581D /* DBGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F52C18FDE43F0029581D /* DBGPageViewController.m */; };
+		5513F53018FDE83E0029581D /* DBGEncodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */; };
+		5513F53318FECDFA0029581D /* DBGLabelHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F53218FECDFA0029581D /* DBGLabelHelpers.m */; };
 		554BF4EF18F718E600AC2DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4EE18F718E600AC2DE0 /* Foundation.framework */; };
 		554BF4F118F718E600AC2DE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */; };
 		554BF4F318F718E600AC2DE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4F218F718E600AC2DE0 /* UIKit.framework */; };
@@ -21,7 +24,7 @@
 		554BF51218F718E700AC2DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BF51018F718E700AC2DE0 /* InfoPlist.strings */; };
 		554BF52018F7217A00AC2DE0 /* DecoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */; };
 		554BF52E18F7297500AC2DE0 /* DecodeMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */; };
-		554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */; };
+		554BF53418F884F900AC2DE0 /* DBGDecodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */; };
 		55513FB218FC613F00EAF893 /* EncoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB118FC613F00EAF893 /* EncoderSpec.m */; };
 		55513FB818FC83C000EAF893 /* EncoderMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB718FC83C000EAF893 /* EncoderMapSpec.m */; };
 		BF1190026F124813A95C98FE /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA0A3C6876F4AC8886ABF01 /* libPods-DBGHTMLEntitiesExampleTests.a */; };
@@ -40,6 +43,12 @@
 /* Begin PBXFileReference section */
 		195A92E8A7A04A08AC8B5B0A /* Pods-DBGHTMLEntitiesExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.xcconfig"; path = "Pods/Pods-DBGHTMLEntitiesExampleTests.xcconfig"; sourceTree = "<group>"; };
 		3B6F6433A497456096DFB798 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5513F52B18FDE43F0029581D /* DBGPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGPageViewController.h; sourceTree = "<group>"; };
+		5513F52C18FDE43F0029581D /* DBGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGPageViewController.m; sourceTree = "<group>"; };
+		5513F52E18FDE83E0029581D /* DBGEncodeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGEncodeExampleViewController.h; sourceTree = "<group>"; };
+		5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGEncodeExampleViewController.m; sourceTree = "<group>"; };
+		5513F53118FECDFA0029581D /* DBGLabelHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGLabelHelpers.h; sourceTree = "<group>"; };
+		5513F53218FECDFA0029581D /* DBGLabelHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGLabelHelpers.m; sourceTree = "<group>"; };
 		554BF4EB18F718E600AC2DE0 /* DBGHTMLEntitiesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBGHTMLEntitiesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554BF4EE18F718E600AC2DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,8 +70,8 @@
 		554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DecodeMapSpec.m; path = ../../Tests/DecodeMapSpec.m; sourceTree = "<group>"; };
 		554BF52F18F744F500AC2DE0 /* DBGHTMLEntityDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityDecoder.h; path = ../Classes/DBGHTMLEntityDecoder.h; sourceTree = "<group>"; };
 		554BF53018F744F500AC2DE0 /* DBGHTMLEntityDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityDecoder.m; path = ../Classes/DBGHTMLEntityDecoder.m; sourceTree = "<group>"; };
-		554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGExampleViewController.h; sourceTree = "<group>"; };
-		554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGExampleViewController.m; sourceTree = "<group>"; };
+		554BF53218F884F900AC2DE0 /* DBGDecodeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGDecodeExampleViewController.h; sourceTree = "<group>"; };
+		554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGDecodeExampleViewController.m; sourceTree = "<group>"; };
 		55513FB118FC613F00EAF893 /* EncoderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncoderSpec.m; path = ../../Tests/EncoderSpec.m; sourceTree = "<group>"; };
 		55513FB318FC643900EAF893 /* DBGHTMLEntityEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityEncoder.h; path = ../Classes/DBGHTMLEntityEncoder.h; sourceTree = "<group>"; };
 		55513FB418FC643900EAF893 /* DBGHTMLEntityEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityEncoder.m; path = ../Classes/DBGHTMLEntityEncoder.m; sourceTree = "<group>"; };
@@ -141,8 +150,14 @@
 				554BF4FE18F718E600AC2DE0 /* DBGAppDelegate.m */,
 				554BF50018F718E600AC2DE0 /* Images.xcassets */,
 				554BF4F518F718E600AC2DE0 /* Supporting Files */,
-				554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */,
-				554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */,
+				554BF53218F884F900AC2DE0 /* DBGDecodeExampleViewController.h */,
+				554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */,
+				5513F52B18FDE43F0029581D /* DBGPageViewController.h */,
+				5513F52C18FDE43F0029581D /* DBGPageViewController.m */,
+				5513F52E18FDE83E0029581D /* DBGEncodeExampleViewController.h */,
+				5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */,
+				5513F53118FECDFA0029581D /* DBGLabelHelpers.h */,
+				5513F53218FECDFA0029581D /* DBGLabelHelpers.m */,
 			);
 			path = DBGHTMLEntitiesExample;
 			sourceTree = "<group>";
@@ -357,9 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */,
+				554BF53418F884F900AC2DE0 /* DBGDecodeExampleViewController.m in Sources */,
+				5513F53018FDE83E0029581D /* DBGEncodeExampleViewController.m in Sources */,
+				5513F53318FECDFA0029581D /* DBGLabelHelpers.m in Sources */,
 				554BF4FF18F718E600AC2DE0 /* DBGAppDelegate.m in Sources */,
 				554BF4FB18F718E600AC2DE0 /* main.m in Sources */,
+				5513F52D18FDE43F0029581D /* DBGPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
