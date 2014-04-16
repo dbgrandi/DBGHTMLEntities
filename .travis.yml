@@ -4,4 +4,4 @@ before_install:
     - gem install cocoapods xcpretty -N
     - cd Example && pod install
     - cd ..
-  script: xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator test | xcpretty -c
+script: xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator test | xcpretty -c
