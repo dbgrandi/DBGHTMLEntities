@@ -1,5 +1,6 @@
 language: objective-c
 before_install:
+    - open -a iPhone\ Simulator
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - cd Example
     - export LANG=en_US.UTF-8
