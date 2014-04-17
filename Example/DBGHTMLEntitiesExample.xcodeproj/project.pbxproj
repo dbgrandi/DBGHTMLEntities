@@ -49,6 +49,8 @@
 		5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGEncodeExampleViewController.m; sourceTree = "<group>"; };
 		5513F53118FECDFA0029581D /* DBGLabelHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGLabelHelpers.h; sourceTree = "<group>"; };
 		5513F53218FECDFA0029581D /* DBGLabelHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGLabelHelpers.m; sourceTree = "<group>"; };
+		5513F535190023690029581D /* DBGHTMLEntityEncoder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DBGHTMLEntityEncoder+Private.h"; path = "../Classes/DBGHTMLEntityEncoder+Private.h"; sourceTree = "<group>"; };
+		5513F536190023BE0029581D /* DBGHTMLEntityDecoder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DBGHTMLEntityDecoder+Private.h"; path = "../Classes/DBGHTMLEntityDecoder+Private.h"; sourceTree = "<group>"; };
 		554BF4EB18F718E600AC2DE0 /* DBGHTMLEntitiesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBGHTMLEntitiesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554BF4EE18F718E600AC2DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,10 +201,12 @@
 			children = (
 				554BF52818F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.h */,
 				554BF52918F7288C00AC2DE0 /* DBGHTMLEntityDecodeMap.m */,
+				5513F536190023BE0029581D /* DBGHTMLEntityDecoder+Private.h */,
 				554BF52F18F744F500AC2DE0 /* DBGHTMLEntityDecoder.h */,
 				554BF53018F744F500AC2DE0 /* DBGHTMLEntityDecoder.m */,
 				55513FB518FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.h */,
 				55513FB618FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.m */,
+				5513F535190023690029581D /* DBGHTMLEntityEncoder+Private.h */,
 				55513FB318FC643900EAF893 /* DBGHTMLEntityEncoder.h */,
 				55513FB418FC643900EAF893 /* DBGHTMLEntityEncoder.m */,
 			);

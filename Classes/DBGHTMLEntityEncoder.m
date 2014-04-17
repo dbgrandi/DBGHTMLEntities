@@ -7,6 +7,7 @@
 //
 
 #import "DBGHTMLEntityEncoder.h"
+#import "DBGHTMLEntityEncoder+Private.h"
 #import "DBGHTMLEntityEncodeMap.h"
 #import "DBGHTMLEntityDecodeMap.h"
 
@@ -22,14 +23,14 @@
     return mutableString;
 }
 
-- (NSMutableString *)encodeStringInPlace:(NSMutableString *)mutableString {
-    return [self encodeStringInPlace:mutableString withFormats:[self defaultFormats]];
+- (void)encodeStringInPlace:(NSMutableString *)mutableString {
+    [self encodeStringInPlace:mutableString withFormats:[self defaultFormats]];
 }
 
-- (NSMutableString *)encodeStringInPlace:(NSMutableString *)mutableString withFormats:(DBGHTMLEntityEncoderFormats)formats {
+- (void)encodeStringInPlace:(NSMutableString *)mutableString withFormats:(DBGHTMLEntityEncoderFormats)formats {
     // If it does NOT need encoding, return the string.
     if (![self stringNeedsEncoding:mutableString]) {
-        return mutableString;
+        return;
     }
 
     NSMutableArray *ranges = [@[] mutableCopy];
@@ -81,7 +82,7 @@
         }
     }
 
-    return mutableString;
+    return;
 }
 
 - (BOOL)stringNeedsEncoding:(NSString *)string {

@@ -9,11 +9,6 @@
 @interface DBGHTMLEntityDecoder : NSObject
 
 /**
- * Match entities within the string using a Regular Expression.
- */
-- (NSArray *)entitiesInString:(NSString *)string;
-
-/**
  * Decode all the entities within a string, returning a new string.
  */
 - (NSString *)decodeString:(NSString *)string;

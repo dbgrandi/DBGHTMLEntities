@@ -36,24 +36,14 @@ typedef NS_OPTIONS(NSUInteger, DBGHTMLEntityEncoderFormats) {
 - (NSString *)encode:(NSString *)string withFormats:(DBGHTMLEntityEncoderFormats)formats;
 
 /**
- * Encode the string using the default formats (named and decimal).
+ * Encode the string using the default formats (Named and Decimal).
  */
-- (NSMutableString *)encodeStringInPlace:(NSMutableString *)mutableString;
+- (void)encodeStringInPlace:(NSMutableString *)mutableString;
 
 /**
  * Encode the string using the passed in formats. If both Decimal and Hex are
  * passed in, Decimal will override Hex.
  */
-- (NSMutableString *)encodeStringInPlace:(NSMutableString *)mutableString withFormats:(DBGHTMLEntityEncoderFormats)formats;
-
-/**
- * Does a string need to be encoded? Exposed mostly for testing.
- */
-- (BOOL)stringNeedsEncoding:(NSString *)string;
-
-/**
- * Given a characterSet and string, return an array of NSRange matches.
- */
-- (NSArray *)rangesOfCharacters:(NSCharacterSet *)characterSet string:(NSString *)str;
+- (void)encodeStringInPlace:(NSMutableString *)mutableString withFormats:(DBGHTMLEntityEncoderFormats)formats;
 
 @end

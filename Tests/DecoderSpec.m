@@ -11,6 +11,7 @@
 #import "Expecta.h"
 
 #import "DBGHTMLEntityDecoder.h"
+#import "DBGHTMLEntityDecoder+Private.h"
 
 SpecBegin(DecoderSpec)
 
