@@ -4,7 +4,7 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 
-![](http://i.imgur.com/3qAOJig.gif)
+![](http://i.imgur.com/3qAOJig.png)
 
 ## Usage
 
