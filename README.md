@@ -1,6 +1,6 @@
 # DBGHTMLEntities
 
-[![Status](http://img.shields.io/travis/dbgrandi/DBGHTMLEntities.svg)](http://travis-ci.org/dbgrandi/DBGHTMLEntities)
+[![Build Status](https://travis-ci.org/dbgrandi/DBGHTMLEntities.svg?branch=master)](https://travis-ci.org/dbgrandi/DBGHTMLEntities)
 [![Version](http://cocoapod-badges.herokuapp.com/v/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 
