@@ -1,6 +1,6 @@
 platform :ios, '7.0'
 
-pod "DBGHTMLEntities", :path => "../"
+pod "DBGHTMLEntities", :path => "../DBGHTMLEntities.podspec"
 
 pod 'ORStackView'
 

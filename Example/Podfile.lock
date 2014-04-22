@@ -1,5 +1,5 @@
 PODS:
-  - DBGHTMLEntities (0.1.0)
+  - DBGHTMLEntities (0.2.0)
   - Expecta (0.3.0)
   - FLKAutoLayout (0.1.1)
   - ORStackView (1.1.0):
@@ -7,17 +7,17 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - DBGHTMLEntities (from `../`)
+  - DBGHTMLEntities (from `../DBGHTMLEntities.podspec`)
   - Expecta (~> 0.3.0)
   - ORStackView
   - Specta (~> 0.2.1)
 
 EXTERNAL SOURCES:
   DBGHTMLEntities:
-    :path: ../
+    :path: ../DBGHTMLEntities.podspec
 
 SPEC CHECKSUMS:
-  DBGHTMLEntities: 06361608eff816bb737cadf2956f9dc81ab16250
+  DBGHTMLEntities: 5d6bfc606b3956392e887714a9287c71663f0a54
   Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
   FLKAutoLayout: fc04b932009174d4118ef4bda9dc8fedf1369efc
   ORStackView: 974852335f3f3b06d1ad27513f407d3a443f127c
