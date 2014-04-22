@@ -27,6 +27,7 @@
 		554BF53418F884F900AC2DE0 /* DBGDecodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */; };
 		55513FB218FC613F00EAF893 /* EncoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB118FC613F00EAF893 /* EncoderSpec.m */; };
 		55513FB818FC83C000EAF893 /* EncoderMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB718FC83C000EAF893 /* EncoderMapSpec.m */; };
+		55632C32190370C500AE50F1 /* RoundTripSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55632C31190370C500AE50F1 /* RoundTripSpec.m */; };
 		BF1190026F124813A95C98FE /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA0A3C6876F4AC8886ABF01 /* libPods-DBGHTMLEntitiesExampleTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		55513FB518FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityEncodeMap.h; path = ../Classes/DBGHTMLEntityEncodeMap.h; sourceTree = "<group>"; };
 		55513FB618FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityEncodeMap.m; path = ../Classes/DBGHTMLEntityEncodeMap.m; sourceTree = "<group>"; };
 		55513FB718FC83C000EAF893 /* EncoderMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncoderMapSpec.m; path = ../../Tests/EncoderMapSpec.m; sourceTree = "<group>"; };
+		55632C31190370C500AE50F1 /* RoundTripSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundTripSpec.m; path = ../../Tests/RoundTripSpec.m; sourceTree = "<group>"; };
 		BFA0A3C6876F4AC8886ABF01 /* libPods-DBGHTMLEntitiesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF074589EF94508A7084FF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				55513FB718FC83C000EAF893 /* EncoderMapSpec.m */,
 				55513FB118FC613F00EAF893 /* EncoderSpec.m */,
 				554BF50E18F718E700AC2DE0 /* Supporting Files */,
+				55632C31190370C500AE50F1 /* RoundTripSpec.m */,
 			);
 			path = DBGHTMLEntitiesExampleTests;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				55513FB818FC83C000EAF893 /* EncoderMapSpec.m in Sources */,
 				554BF52E18F7297500AC2DE0 /* DecodeMapSpec.m in Sources */,
 				554BF52018F7217A00AC2DE0 /* DecoderSpec.m in Sources */,
+				55632C32190370C500AE50F1 /* RoundTripSpec.m in Sources */,
 				55513FB218FC613F00EAF893 /* EncoderSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

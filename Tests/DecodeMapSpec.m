@@ -26,6 +26,7 @@ describe(@"DecodeMapSpec", ^{
         expect(decodeMap[@"&apos;"]).to.equal(@"'");
         expect(decodeMap[@"&lt;"]).to.equal(@"<");
         expect(decodeMap[@"&quot;"]).to.equal(@"\"");
+        expect(decodeMap[@"&gt;"]).to.equal(@">");
     });
 
     it(@"should decode extended named entities", ^{

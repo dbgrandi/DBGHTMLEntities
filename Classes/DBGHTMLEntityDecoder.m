@@ -10,7 +10,7 @@
 #import "DBGHTMLEntityDecoder+Private.h"
 #import "DBGHTMLEntityDecodeMap.h"
 
-static NSString *DBGEntityRegexString = @"&(?:([a-z][a-z0-9]{2,6})|#([0-9]{1,7})|#x([0-9a-f]{1,6}));";
+static NSString *DBGEntityRegexString = @"&(?:([a-z][a-z0-9]{1,7})|#([0-9]{1,7})|#x([0-9a-f]{1,6}));";
 
 @implementation DBGHTMLEntityDecoder
 
