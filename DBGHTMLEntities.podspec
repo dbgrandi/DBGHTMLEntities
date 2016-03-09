@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/dbgrandi'
 
   s.ios.platform     = :ios, '6.0'
-  s.osx.platform = :osx, '10.9'
+  s.osx.platform     = :osx, '10.7'
   
   s.requires_arc = true
 
