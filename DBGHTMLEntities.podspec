@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/dbgrandi/DBGHTMLEntities.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dbgrandi'
 
-  s.platform     = :ios, '6.0'
+  s.ios.platform     = :ios, '6.0'
+  s.osx.platform     = :osx, '10.7'
+  
   s.requires_arc = true
 
   s.source_files = 'Classes'
