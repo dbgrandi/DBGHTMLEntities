@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "http://i.imgur.com/3qAOJig.gif"
   s.license          = 'MIT'
   s.author           = { "David Grandinetti" => "dave@wegoto12.com" }
-  s.source           = { :git => "https://github.com/edl00k/DBGHTMLEntities.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/dbgrandi/DBGHTMLEntities.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dbgrandi'
 
   s.ios.platform     = :ios, '6.0'
