@@ -1,8 +1,9 @@
 # DBGHTMLEntities CHANGELOG
 
-## 0.2.1
+## 1.0.0
 
 Added `osx`, `tvos`, and `watchos` platforms.
+Make `+Private" categories actually private.
 
 ## 0.2.0
 
