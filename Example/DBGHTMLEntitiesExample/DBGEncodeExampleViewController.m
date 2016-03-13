@@ -9,7 +9,8 @@
 #import "DBGEncodeExampleViewController.h"
 #import "DBGHTMLEntityEncoder.h"
 #import "DBGLabelHelpers.h"
-#import "ORStackScrollView.h"
+
+#import <ORStackView/ORStackScrollView.h>
 
 @implementation DBGEncodeExampleViewController
 

@@ -1,8 +1,9 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 
-pod "DBGHTMLEntities", :path => "../DBGHTMLEntities.podspec"
-
-pod 'ORStackView'
+target :DBGHTMLEntitiesExample do
+  pod "DBGHTMLEntities", :path => "../DBGHTMLEntities.podspec"
+  pod 'ORStackView'
+end
 
 target :DBGHTMLEntitiesExampleTests do
   pod 'Specta',      '~> 0.2.1'

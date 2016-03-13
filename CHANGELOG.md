@@ -1,5 +1,9 @@
 # DBGHTMLEntities CHANGELOG
 
+## 0.2.1
+
+Added `osx`, `tvos`, and `watchos` platforms.
+
 ## 0.2.0
 
 Added a few more specs that found issues in our parsing regex with either really short (e.g. &Mu;) or really long (e.g. &thetasym;) entities.
