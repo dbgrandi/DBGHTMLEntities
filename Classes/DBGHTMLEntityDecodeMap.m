@@ -288,14 +288,24 @@
         unsigned tempInt = 0;
         NSScanner *scanner = [NSScanner scannerWithString:[rawKey substringFromIndex:2]];
         if ([scanner scanHexInt:&tempInt]) {
-            return [NSString stringWithFormat:@"%C", (unichar)tempInt];
+            if (tempInt > USHRT_MAX) {
+                tempInt = NSSwapHostIntToLittle(tempInt);
+                return [[NSString alloc] initWithBytes:&tempInt length:sizeof(tempInt) encoding:NSUTF32LittleEndianStringEncoding];
+            } else {
+                return [NSString stringWithFormat:@"%C", (unichar)tempInt];
+            }
         }
     } else if ([rawKey hasPrefix:@"#"]) {
         // it's decimal
         int tempInt = 0;
         NSScanner *scanner = [NSScanner scannerWithString:[rawKey substringFromIndex:1]];
         if ([scanner scanInt:&tempInt]) {
-            return [NSString stringWithFormat:@"%C", (unichar)tempInt];
+            if (tempInt > USHRT_MAX) {
+                tempInt = NSSwapHostIntToLittle(tempInt);
+                return [[NSString alloc] initWithBytes:&tempInt length:sizeof(tempInt) encoding:NSUTF32LittleEndianStringEncoding];
+            } else {
+                return [NSString stringWithFormat:@"%C", (unichar)tempInt];
+            }
         }
     } else if (self.rawMap[rawKey]) {
         // it exists as a named mapping
