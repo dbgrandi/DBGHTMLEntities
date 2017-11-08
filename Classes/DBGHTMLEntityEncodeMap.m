@@ -45,12 +45,12 @@
 
 - (NSString *)encodeAsHex:(UTF32Char)inputChar {
     // check to make sure we SHOULD encode this hex value?
-    return [NSString stringWithFormat:@"&#x%x;", inputChar];
+    return [NSString stringWithFormat:@"&#x%lx;", (unsigned long)inputChar];
 }
 
 - (NSString *)encodeAsDecimal:(UTF32Char)inputChar {
     // check to make sure we SHOULD encode this decimal value?
-    return [NSString stringWithFormat:@"&#%d;", inputChar];
+    return [NSString stringWithFormat:@"&#%lu;", (unsigned long)inputChar];
 }
 
 @end
