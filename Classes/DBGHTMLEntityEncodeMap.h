@@ -12,18 +12,18 @@
  * Return the code point as a character entity reference.
  * If there is not a named mapping, return nil.
  */
-- (NSString *)encodeAsNamed:(unichar)inputChar;
+- (NSString *)encodeAsNamed:(UTF32Char)inputChar;
 
 /**
  * Returns the code point as a numeric character reference
  * encoded in hexidecimal form. e.g. - &#xhhhh;
  */
-- (NSString *)encodeAsHex:(unichar)inputChar;
+- (NSString *)encodeAsHex:(UTF32Char)inputChar;
 
 /**
  * Returns the code point as a numeric character reference
  * encoded in decimal form. e.g. - &#nnnn;
  */
-- (NSString *)encodeAsDecimal:(unichar)inputChar;
+- (NSString *)encodeAsDecimal:(UTF32Char)inputChar;
 
 @end
