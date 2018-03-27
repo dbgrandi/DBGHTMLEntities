@@ -70,7 +70,7 @@
 #pragma mark - String generators
 
 - (NSString *)basicString {
-    return @"Today &amp; tomorrow only, we&apos;ve got extra pies to give out. Not to be confused with &#960; #betterthandonuts, cc/ @dbgrandi";
+    return @"Today &amp; tomorrow only, we&apos;ve got extra pies to give out. Not to be confused with &#960; #betterthandonuts, cc/ @dbgrandi &#128077;";
 }
 
 - (NSMutableAttributedString *)tweetString {

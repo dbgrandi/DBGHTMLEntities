@@ -40,6 +40,7 @@ describe(@"DecodeMapSpec", ^{
         expect(decodeMap[@"&#8220;"]).to.equal(@"“");
         expect(decodeMap[@"&#8230;"]).to.equal(@"…");
         expect(decodeMap[@"&#32;"]).to.equal(@" ");
+        expect(decodeMap[@"&#128077;"]).to.equal(@"👍");
     });
 
     it(@"should decode hexadecimal entities", ^{
@@ -54,6 +55,7 @@ describe(@"DecodeMapSpec", ^{
         expect(decodeMap[@"1"]).to.beNil();
         expect(decodeMap[@"&;"]).to.beNil();
         expect(decodeMap[@""]).to.beNil();
+        expect(decodeMap[@"&#12345678;"]).to.beNil();
     });
 
 });

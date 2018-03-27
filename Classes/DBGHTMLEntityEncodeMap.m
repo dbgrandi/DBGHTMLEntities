@@ -35,22 +35,22 @@
     return _sharedMap;
 }
 
-- (NSString *)encodeAsNamed:(unichar)inputChar {
-    NSNumber *charNumber = [NSNumber numberWithUnsignedShort:inputChar];
+- (NSString *)encodeAsNamed:(UTF32Char)inputChar {
+    NSNumber *charNumber = [NSNumber numberWithUnsignedInt:inputChar];
     if (self.namedMap[charNumber]) {
         return [NSString stringWithFormat:@"&%@;", self.namedMap[charNumber]];
     }
     return nil;
 }
 
-- (NSString *)encodeAsHex:(unichar)inputChar {
+- (NSString *)encodeAsHex:(UTF32Char)inputChar {
     // check to make sure we SHOULD encode this hex value?
-    return [NSString stringWithFormat:@"&#x%x;", inputChar];
+    return [NSString stringWithFormat:@"&#x%lx;", (unsigned long)inputChar];
 }
 
-- (NSString *)encodeAsDecimal:(unichar)inputChar {
+- (NSString *)encodeAsDecimal:(UTF32Char)inputChar {
     // check to make sure we SHOULD encode this decimal value?
-    return [NSString stringWithFormat:@"&#%d;", inputChar];
+    return [NSString stringWithFormat:@"&#%lu;", (unsigned long)inputChar];
 }
 
 @end

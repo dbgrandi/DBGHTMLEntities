@@ -62,22 +62,23 @@
     // for each range, try to decode as basic, then name, then decimal/hex
     for (NSValue *value in ranges) {
         NSRange range = [value rangeValue];
-        unichar theChar = [mutableString characterAtIndex:range.location];
+        UTF32Char theChar;
+        [mutableString getBytes:&theChar maxLength:sizeof(theChar) usedLength:NULL encoding:NSUTF32LittleEndianStringEncoding options:0 range:range remainingRange:NULL];
         NSString *replacement = nil;
         
         if (formats & DBGHTMLEntityEncoderNamedFormat) {
-            replacement = [encodeMap encodeAsNamed:theChar];
+            replacement = [encodeMap encodeAsNamed:NSSwapLittleIntToHost(theChar)];
             if (replacement) {
                 [mutableString replaceCharactersInRange:range withString:replacement];
                 continue;
             }
         }
         if (formats & DBGHTMLEntityEncoderDecimalFormat) {
-            [mutableString replaceCharactersInRange:range withString:[encodeMap encodeAsDecimal:theChar]];
+            [mutableString replaceCharactersInRange:range withString:[encodeMap encodeAsDecimal:NSSwapLittleIntToHost(theChar)]];
             continue;
         }
         if (formats & DBGHTMLEntityEncoderHexFormat) {
-            [mutableString replaceCharactersInRange:range withString:[encodeMap encodeAsHex:theChar]];
+            [mutableString replaceCharactersInRange:range withString:[encodeMap encodeAsHex:NSSwapLittleIntToHost(theChar)]];
             continue;
         }
     }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DBGHTMLEntities"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "Easily Decode/Encode HTML entity strings (e.g. &amp;)"
   s.description      = <<-DESC
                        Easily Decode/Encode HTML entity strings (e.g. &amp;). Tested, and with a sexy LICENSE.
