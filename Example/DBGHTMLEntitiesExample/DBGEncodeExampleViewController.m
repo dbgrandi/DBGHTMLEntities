@@ -24,67 +24,67 @@
     DBGHTMLEntityEncoder *encoder = [[DBGHTMLEntityEncoder alloc] init];
     
     UILabel *titleLabel = [DBGLabelHelpers titleLabel:@"Encoder Examples"];
-    [stackView addSubview:titleLabel withTopMargin:@"40" sideMargin:@"20"];
+    [stackView addSubview:titleLabel withPrecedingMargin:40 sideMargin:20];
 
     //
     // examples of the default encoding (named > decimal)
     //
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Our example string..."]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
     
     [stackView addSubview:[DBGLabelHelpers basicLabel:[self basicString]]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Encoded with default settings..."]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
 
     NSString *defaultEncode = [encoder encode:[self basicString]];
     [stackView addSubview:[DBGLabelHelpers basicLabel:defaultEncode]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Encoded with decimal only..."]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
 
     NSString *decimalEncode = [encoder encode:[self basicString] withFormats:(DBGHTMLEntityEncoderDecimalFormat)];
     [stackView addSubview:[DBGLabelHelpers basicLabel:decimalEncode]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Encoded with named preference over hex..."]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
 
     NSString *hexPreferenceEncode = [encoder encode:[self basicString] withFormats:(DBGHTMLEntityEncoderNamedFormat|DBGHTMLEntityEncoderHexFormat)];
     [stackView addSubview:[DBGLabelHelpers basicLabel:hexPreferenceEncode]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     //
     // examples of default encoding with NSAttributedString, one regular, one decoded
     //
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Default encoding with an NSMutableAttributedString"]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
     
     [stackView addSubview:[DBGLabelHelpers attributedLabel:[self tweetString]]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
     
     NSMutableAttributedString *tweetString = [self tweetString];
     NSMutableString *mutableTweetString = tweetString.mutableString;
     [encoder encodeStringInPlace:mutableTweetString];
     
     [stackView addSubview:[DBGLabelHelpers attributedLabel:tweetString]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
     
     // footer spacer
-    [stackView addSubview:[[UIView alloc] init] withTopMargin:@"40"];
+    [stackView addSubview:[[UIView alloc] init] withPrecedingMargin:40];
 }
 
 #pragma mark - String generators

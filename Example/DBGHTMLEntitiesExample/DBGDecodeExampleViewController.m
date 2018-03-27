@@ -24,47 +24,46 @@
     DBGHTMLEntityDecoder *decoder = [[DBGHTMLEntityDecoder alloc] init];
     
     [stackView addSubview:[DBGLabelHelpers titleLabel:@"Decoder Examples"]
-            withTopMargin:@"40"
-               sideMargin:@"20"];
+            withPrecedingMargin:40
+               sideMargin:20];
 
     //
     // examples with NSString, one is regular, the other is decoded
     //
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Labels with an NSString"]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
 
     [stackView addSubview:[DBGLabelHelpers basicLabel:[self basicString]]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     NSString *decodedString = [decoder decodeString:[self basicString]];
     [stackView addSubview:[DBGLabelHelpers basicLabel:decodedString]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     //
     // examples with NSAttributedString, one regular, one decoded
     //
     [stackView addSubview:[DBGLabelHelpers explainLabel:@"Labels with an NSMutableAttributedString"]
-            withTopMargin:@"50"
-               sideMargin:@"20"];
+      withPrecedingMargin:50
+               sideMargin:20];
 
     [stackView addSubview:[DBGLabelHelpers attributedLabel:[self tweetString]]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
     NSMutableAttributedString *tweetString = [self tweetString];
     NSMutableString *mutableTweetString = tweetString.mutableString;
     [decoder decodeStringInPlace:mutableTweetString];
 
     [stackView addSubview:[DBGLabelHelpers attributedLabel:tweetString]
-            withTopMargin:@"10"
-               sideMargin:@"20"];
+      withPrecedingMargin:10
+               sideMargin:20];
 
-    
     // footer spacer
-    [stackView addSubview:[[UIView alloc] init] withTopMargin:@"40"];
+    [stackView addSubview:[[UIView alloc] init] withPrecedingMargin:40];
 }
 
 
