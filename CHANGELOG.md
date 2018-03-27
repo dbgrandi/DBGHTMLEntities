@@ -1,8 +1,12 @@
 # DBGHTMLEntities CHANGELOG
 
+## 1.1.0
+
+- Add support for unicode emoji (@salagadoola)
+
 ## 1.0.0
 
-Added `osx`, `tvos`, and `watchos` platforms.
+Added `osx`, `tvos`, and `watchos` platforms. 
 Make `+Private" categories actually private.
 
 ## 0.2.0
