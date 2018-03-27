@@ -54,11 +54,13 @@ describe(@"EncoderMapSpec", ^{
     it(@"should encode decimal entities", ^{
         expect([encodeMap encodeAsDecimal:L'“']).to.equal(@"&#8220;");
         expect([encodeMap encodeAsDecimal:L'…']).to.equal(@"&#8230;");
+        expect([encodeMap encodeAsDecimal:L'👍']).to.equal(@"&#128077;");
     });
     
     it(@"should encode hexadecimal entities", ^{
         expect([encodeMap encodeAsHex:L'−']).to.equal(@"&#x2212;");
         expect([encodeMap encodeAsHex:L'—']).to.equal(@"&#x2014;");
+        expect([encodeMap encodeAsHex:L'👍']).to.equal(@"&#x1f44d;");
     });
 
 });
