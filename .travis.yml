@@ -4,4 +4,4 @@ before_install:
     - bundle install
     - pod install --project-directory=Example
     - set -o pipefail
-script: xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator -configuration Debug test -destination 'platform=iOS Simulator,name=iPhone 8' | xcpretty -c
+script: xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator -configuration Debug test -destination platform='iOS Simulator',OS='9.3',name='iPhone 7' | xcpretty -c
