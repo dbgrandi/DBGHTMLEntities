@@ -15,6 +15,7 @@
     titleLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:28];
     titleLabel.numberOfLines = 0;
     titleLabel.text = text;
+    titleLabel.backgroundColor = UIColor.whiteColor;
     
     return titleLabel;
 }
@@ -24,7 +25,8 @@
     label.font = [UIFont fontWithName:@"AvenirNext-Medium" size:22];
     label.numberOfLines = 0;
     label.text = text;
-    
+    label.backgroundColor = UIColor.whiteColor;
+
     return label;
 }
 
@@ -33,7 +35,8 @@
     label.numberOfLines = 0;
     label.font = [UIFont fontWithName:@"AvenirNext-Regular" size:22];
     label.text = text;
-    
+    label.backgroundColor = UIColor.whiteColor;
+
     return label;
 }
 
@@ -41,7 +44,8 @@
     UILabel *label = [[UILabel alloc] init];
     label.numberOfLines = 0;
     label.attributedText = attributedText;
-    
+    label.backgroundColor = UIColor.whiteColor;
+
     return label;
 }
 

@@ -1,16 +1,16 @@
 PODS:
   - DBGHTMLEntities (1.0.0)
-  - Expecta (0.3.0)
-  - FLKAutoLayout (0.1.1)
-  - ORStackView (1.1.0):
-    - FLKAutoLayout (~> 0.1)
-  - Specta (0.2.1)
+  - Expecta (1.0.6)
+  - FLKAutoLayout (0.2.1)
+  - ORStackView (3.0.1):
+    - FLKAutoLayout (~> 0.2)
+  - Specta (1.0.7)
 
 DEPENDENCIES:
   - DBGHTMLEntities (from `../DBGHTMLEntities.podspec`)
-  - Expecta (~> 0.3.0)
+  - Expecta (~> 1.0)
   - ORStackView
-  - Specta (~> 0.2.1)
+  - Specta (~> 1.0)
 
 EXTERNAL SOURCES:
   DBGHTMLEntities:
@@ -18,11 +18,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DBGHTMLEntities: 78b2edd50b83f34cc6283fecb762dd3446a1496b
-  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
-  FLKAutoLayout: 95b12c5cd9652100235140b68652f063f7437851
-  ORStackView: 0c88982db15c1c383c323a398701aefb0bf85c15
-  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
+  ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 71ad51d588c6db3a60674f21265e723719113e56
+PODFILE CHECKSUM: 5eae54b8384f6881d54ff208d7a80d9c42b40843
 
 COCOAPODS: 1.4.0
