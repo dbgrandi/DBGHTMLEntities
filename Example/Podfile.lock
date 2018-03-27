@@ -1,5 +1,5 @@
 PODS:
-  - DBGHTMLEntities (0.2.1)
+  - DBGHTMLEntities (1.0.0)
   - Expecta (0.3.0)
   - FLKAutoLayout (0.1.1)
   - ORStackView (1.1.0):
@@ -14,10 +14,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DBGHTMLEntities:
-    :path: "../DBGHTMLEntities.podspec"
+    :path: ../DBGHTMLEntities.podspec
 
 SPEC CHECKSUMS:
-  DBGHTMLEntities: 558cd7cab556fdb05546f4d2af9803c1bbf29564
+  DBGHTMLEntities: 78b2edd50b83f34cc6283fecb762dd3446a1496b
   Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
   FLKAutoLayout: 95b12c5cd9652100235140b68652f063f7437851
   ORStackView: 0c88982db15c1c383c323a398701aefb0bf85c15
@@ -25,4 +25,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 71ad51d588c6db3a60674f21265e723719113e56
 
-COCOAPODS: 1.0.0.beta.5
+COCOAPODS: 1.4.0
