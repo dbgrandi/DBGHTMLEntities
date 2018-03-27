@@ -259,7 +259,6 @@
 				554BF50218F718E700AC2DE0 /* Sources */,
 				554BF50318F718E700AC2DE0 /* Frameworks */,
 				554BF50418F718E700AC2DE0 /* Resources */,
-				5513F53418FF32550029581D /* ShellScript */,
 				6ECE73C34575B19B42A1137C /* [CP] Embed Pods Frameworks */,
 				27EF0C016D35C54E8ABB3B0D /* [CP] Copy Pods Resources */,
 			);
@@ -374,19 +373,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		5513F53418FF32550029581D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change \"/Developer/Library/Frameworks/XCTest.framework/XCTest\" \"${SDKROOT}/Developer/Library/Frameworks/XCTest.framework/XCTest\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"";
 		};
 		6ECE73C34575B19B42A1137C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
