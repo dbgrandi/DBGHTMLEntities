@@ -185,8 +185,8 @@
 				554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */,
 				55513FB718FC83C000EAF893 /* EncoderMapSpec.m */,
 				55513FB118FC613F00EAF893 /* EncoderSpec.m */,
-				554BF50E18F718E700AC2DE0 /* Supporting Files */,
 				55632C31190370C500AE50F1 /* RoundTripSpec.m */,
+				554BF50E18F718E700AC2DE0 /* Supporting Files */,
 			);
 			path = DBGHTMLEntitiesExampleTests;
 			sourceTree = "<group>";
@@ -239,8 +239,6 @@
 				554BF4E718F718E600AC2DE0 /* Sources */,
 				554BF4E818F718E600AC2DE0 /* Frameworks */,
 				554BF4E918F718E600AC2DE0 /* Resources */,
-				C2873BF83903EDC3FC095F97 /* [CP] Embed Pods Frameworks */,
-				3F8DD1A5B13EE786E6EDE05B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,8 +257,6 @@
 				554BF50218F718E700AC2DE0 /* Sources */,
 				554BF50318F718E700AC2DE0 /* Frameworks */,
 				554BF50418F718E700AC2DE0 /* Resources */,
-				6ECE73C34575B19B42A1137C /* [CP] Embed Pods Frameworks */,
-				27EF0C016D35C54E8ABB3B0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,66 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27EF0C016D35C54E8ABB3B0D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F8DD1A5B13EE786E6EDE05B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6ECE73C34575B19B42A1137C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2873BF83903EDC3FC095F97 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6F05643E77C09667C653366 /* [CP] Check Pods Manifest.lock */ = {

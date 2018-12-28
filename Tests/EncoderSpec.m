@@ -24,6 +24,8 @@ describe(@"EncoderSpec", ^{
     });
     
     it(@"should detect if a string needs encoding", ^{
+        expect([encoder stringNeedsEncoding:nil]).to.beFalsy();
+        expect([encoder stringNeedsEncoding:@""]).to.beFalsy();
         expect([encoder stringNeedsEncoding:@"asdf"]).to.beFalsy();
         expect([encoder stringNeedsEncoding:@"`"]).to.beFalsy();
 
@@ -38,6 +40,14 @@ describe(@"EncoderSpec", ^{
         expect([encoder encode:@"`"]).to.equal(@"`");
         expect([encoder encode:@" "]).to.equal(@" ");
         expect([encoder encode:@"Nothing to encode here."]).to.equal(@"Nothing to encode here.");
+    });
+
+    it(@"handle nil and empty strings", ^{
+        expect([encoder encode:nil]).to.beNil();
+        expect([encoder encode:@""]).to.equal(@"");
+
+        expect([[encoder rangesOfCharacters:NSCharacterSet.symbolCharacterSet string:nil] count]).to.equal(0);
+        expect([[encoder rangesOfCharacters:NSCharacterSet.symbolCharacterSet string:@""] count]).to.equal(0);
     });
 
     it(@"should parse the correct number of ranges", ^{
