@@ -7,7 +7,7 @@
 //
 
 #import "DBGAppDelegate.h"
-#import "DBGPageViewController.h"
+#import "DBGExampleViewController.h"
 
 @implementation DBGAppDelegate
 
@@ -15,10 +15,10 @@
 {
     application.statusBarHidden = YES;
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.backgroundColor = UIColor.blackColor;
     
-    self.window.rootViewController = [[DBGPageViewController alloc] init];
+    self.window.rootViewController = [DBGExampleViewController new];
     
     [self.window makeKeyAndVisible];
     return YES;

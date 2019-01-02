@@ -6,6 +6,6 @@
 //  Copyright (c) 2014 David Grandinetti. All rights reserved.
 //
 
-@interface DBGDecodeExampleViewController : UIViewController
+@interface DBGExampleViewController : UIViewController
 
 @end

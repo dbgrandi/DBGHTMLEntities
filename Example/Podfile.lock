@@ -1,28 +1,27 @@
 PODS:
   - DBGHTMLEntities (1.1.0)
   - Expecta (1.0.6)
-  - FLKAutoLayout (0.2.1)
-  - ORStackView (3.0.1):
-    - FLKAutoLayout (~> 0.2)
   - Specta (1.0.7)
 
 DEPENDENCIES:
   - DBGHTMLEntities (from `../DBGHTMLEntities.podspec`)
   - Expecta (~> 1.0)
-  - ORStackView
   - Specta (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
 
 EXTERNAL SOURCES:
   DBGHTMLEntities:
-    :path: ../DBGHTMLEntities.podspec
+    :path: "../DBGHTMLEntities.podspec"
 
 SPEC CHECKSUMS:
   DBGHTMLEntities: 5b601f2bcb5d67bccca753456516260b7324aadf
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
-  ORStackView: a1bb52748cd0ae29891c140baf22ff8972fb363c
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 5eae54b8384f6881d54ff208d7a80d9c42b40843
+PODFILE CHECKSUM: 0a6ceb885f53761a036ee98d808ddbe94e3ae09e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
