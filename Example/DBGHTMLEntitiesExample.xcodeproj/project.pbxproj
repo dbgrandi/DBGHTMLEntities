@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C55572782D7810175CC3ED /* libPods-DBGHTMLEntitiesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */; };
 		2906CB4121DD52AB006D03AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4021DD52AB006D03AE /* LaunchScreen.storyboard */; };
 		5513F53318FECDFA0029581D /* DBGLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F53218FECDFA0029581D /* DBGLabels.m */; };
 		554BF4EF18F718E600AC2DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4EE18F718E600AC2DE0 /* Foundation.framework */; };
@@ -27,7 +26,8 @@
 		55513FB218FC613F00EAF893 /* EncoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB118FC613F00EAF893 /* EncoderSpec.m */; };
 		55513FB818FC83C000EAF893 /* EncoderMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB718FC83C000EAF893 /* EncoderMapSpec.m */; };
 		55632C32190370C500AE50F1 /* RoundTripSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55632C31190370C500AE50F1 /* RoundTripSpec.m */; };
-		BCF84159E977995258262822 /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */; };
+		C9FC0CED214BF55641415D9F /* Pods_DBGHTMLEntitiesExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */; };
+		F3A8ADBFD30879EDB95E35F8 /* Pods_DBGHTMLEntitiesExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2906CB4021DD52AB006D03AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5513F53118FECDFA0029581D /* DBGLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGLabels.h; sourceTree = "<group>"; };
 		5513F53218FECDFA0029581D /* DBGLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGLabels.m; sourceTree = "<group>"; };
 		5513F535190023690029581D /* DBGHTMLEntityEncoder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DBGHTMLEntityEncoder+Private.h"; path = "../Classes/DBGHTMLEntityEncoder+Private.h"; sourceTree = "<group>"; };
@@ -80,8 +77,11 @@
 		55513FB618FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityEncodeMap.m; path = ../Classes/DBGHTMLEntityEncodeMap.m; sourceTree = "<group>"; };
 		55513FB718FC83C000EAF893 /* EncoderMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncoderMapSpec.m; path = ../../Tests/EncoderMapSpec.m; sourceTree = "<group>"; };
 		55632C31190370C500AE50F1 /* RoundTripSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundTripSpec.m; path = ../../Tests/RoundTripSpec.m; sourceTree = "<group>"; };
-		67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.release.xcconfig"; sourceTree = "<group>"; };
-		7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.debug.xcconfig"; sourceTree = "<group>"; };
+		78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBGHTMLEntitiesExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.release.xcconfig"; sourceTree = "<group>"; };
+		D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBGHTMLEntitiesExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				554BF4F118F718E600AC2DE0 /* CoreGraphics.framework in Frameworks */,
 				554BF4F318F718E600AC2DE0 /* UIKit.framework in Frameworks */,
 				554BF4EF18F718E600AC2DE0 /* Foundation.framework in Frameworks */,
-				23C55572782D7810175CC3ED /* libPods-DBGHTMLEntitiesExample.a in Frameworks */,
+				F3A8ADBFD30879EDB95E35F8 /* Pods_DBGHTMLEntitiesExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 				554BF50818F718E700AC2DE0 /* XCTest.framework in Frameworks */,
 				554BF50A18F718E700AC2DE0 /* UIKit.framework in Frameworks */,
 				554BF50918F718E700AC2DE0 /* Foundation.framework in Frameworks */,
-				BCF84159E977995258262822 /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */,
+				C9FC0CED214BF55641415D9F /* Pods_DBGHTMLEntitiesExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 				554BF50D18F718E700AC2DE0 /* DBGHTMLEntitiesExampleTests */,
 				554BF4ED18F718E600AC2DE0 /* Frameworks */,
 				554BF4EC18F718E600AC2DE0 /* Products */,
-				F6680C934C34F65CF6C2BF96 /* Pods */,
+				6103A66A36C038A09DCF26F7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +138,8 @@
 				554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */,
 				554BF4F218F718E600AC2DE0 /* UIKit.framework */,
 				554BF50718F718E700AC2DE0 /* XCTest.framework */,
-				34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */,
-				1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */,
+				78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */,
+				D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,13 +210,13 @@
 			name = DBGHTMLEntities;
 			sourceTree = "<group>";
 		};
-		F6680C934C34F65CF6C2BF96 /* Pods */ = {
+		6103A66A36C038A09DCF26F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */,
-				50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */,
-				524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */,
-				67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */,
+				62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */,
+				A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */,
+				07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */,
+				9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -228,10 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554BF51718F718E700AC2DE0 /* Build configuration list for PBXNativeTarget "DBGHTMLEntitiesExample" */;
 			buildPhases = (
-				020274342329BBBAE4359AA1 /* [CP] Check Pods Manifest.lock */,
+				463E6CFDF037C7FB32A736C9 /* [CP] Check Pods Manifest.lock */,
 				554BF4E718F718E600AC2DE0 /* Sources */,
 				554BF4E818F718E600AC2DE0 /* Frameworks */,
 				554BF4E918F718E600AC2DE0 /* Resources */,
+				13FC6DFEAC556580C5DABB3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,10 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554BF51A18F718E700AC2DE0 /* Build configuration list for PBXNativeTarget "DBGHTMLEntitiesExampleTests" */;
 			buildPhases = (
-				C6F05643E77C09667C653366 /* [CP] Check Pods Manifest.lock */,
+				D97342C53C6A555CD0C2B3DE /* [CP] Check Pods Manifest.lock */,
 				554BF50218F718E700AC2DE0 /* Sources */,
 				554BF50318F718E700AC2DE0 /* Frameworks */,
 				554BF50418F718E700AC2DE0 /* Resources */,
+				DD89AE161C23A005658B9096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,16 +318,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		020274342329BBBAE4359AA1 /* [CP] Check Pods Manifest.lock */ = {
+		13FC6DFEAC556580C5DABB3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		463E6CFDF037C7FB32A736C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DBGHTMLEntitiesExample-checkManifestLockResult.txt",
 			);
@@ -334,22 +362,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6F05643E77C09667C653366 /* [CP] Check Pods Manifest.lock */ = {
+		D97342C53C6A555CD0C2B3DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DBGHTMLEntitiesExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD89AE161C23A005658B9096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -507,7 +565,7 @@
 		};
 		554BF51818F718E700AC2DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */;
+			baseConfigurationReference = 62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -521,7 +579,7 @@
 		};
 		554BF51918F718E700AC2DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */;
+			baseConfigurationReference = A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -535,14 +593,9 @@
 		};
 		554BF51B18F718E700AC2DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBGHTMLEntitiesExample.app/DBGHTMLEntitiesExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -559,14 +612,9 @@
 		};
 		554BF51C18F718E700AC2DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */;
+			baseConfigurationReference = 9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBGHTMLEntitiesExample.app/DBGHTMLEntitiesExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				INFOPLIST_FILE = "DBGHTMLEntitiesExampleTests/DBGHTMLEntitiesExampleTests-Info.plist";
