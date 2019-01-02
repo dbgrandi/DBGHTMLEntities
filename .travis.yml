@@ -5,5 +5,5 @@ before_install:
     - pod install --project-directory=Example
 script:
 - set -o pipefail
-- xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator -configuration Debug test -destination platform='iOS Simulator',OS='10.0',name='iPhone 7' | xcpretty -c
+- xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator -configuration Debug test -destination platform='iOS Simulator',OS='11.4',name='iPhone X' | xcpretty -c
 - pod lib lint
