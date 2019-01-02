@@ -87,6 +87,11 @@
 }
 
 - (BOOL)stringNeedsEncoding:(NSString *)string {
+    // If the string is empty it does not need encoding
+    if ([string length] < 1) {
+        return NO;
+    }
+
     // if the string contains ANY basic entities, it DOES need encoding
     NSCharacterSet *basicEntities = [self basicEntitiesCharacterSet];
     NSRange basicEntityRange = [string rangeOfCharacterFromSet:basicEntities];
@@ -121,6 +126,10 @@
 }
 
 - (NSArray *)rangesOfCharacters:(NSCharacterSet *)characterSet string:(NSString *)str {
+    if ([str length] < 1) {
+        return @[];
+    }
+
     NSMutableArray *results = [NSMutableArray array];
     NSRange searchRange = NSMakeRange(0, [str length]);
     NSRange range;
