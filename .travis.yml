@@ -5,7 +5,7 @@ before_install:
     - export LANG=en_US.UTF-8
     - bundle install
     - pod install --project-directory=Example
-xcode_project: Example/DBGHTMLEntitiesExample.xcodeproj
+xcode_workspace: Example/DBGHTMLEntitiesExample.xcworkspace
 xcode_scheme: DBGHTMLEntitiesExample
 xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
 after_success:
