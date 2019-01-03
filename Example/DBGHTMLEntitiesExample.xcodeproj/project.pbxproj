@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C55572782D7810175CC3ED /* libPods-DBGHTMLEntitiesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */; };
-		5513F52D18FDE43F0029581D /* DBGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F52C18FDE43F0029581D /* DBGPageViewController.m */; };
-		5513F53018FDE83E0029581D /* DBGEncodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */; };
-		5513F53318FECDFA0029581D /* DBGLabelHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F53218FECDFA0029581D /* DBGLabelHelpers.m */; };
+		2906CB4121DD52AB006D03AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2906CB4021DD52AB006D03AE /* LaunchScreen.storyboard */; };
+		5513F53318FECDFA0029581D /* DBGLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513F53218FECDFA0029581D /* DBGLabels.m */; };
 		554BF4EF18F718E600AC2DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4EE18F718E600AC2DE0 /* Foundation.framework */; };
 		554BF4F118F718E600AC2DE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */; };
 		554BF4F318F718E600AC2DE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554BF4F218F718E600AC2DE0 /* UIKit.framework */; };
@@ -24,11 +22,12 @@
 		554BF51218F718E700AC2DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554BF51018F718E700AC2DE0 /* InfoPlist.strings */; };
 		554BF52018F7217A00AC2DE0 /* DecoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF51F18F7217A00AC2DE0 /* DecoderSpec.m */; };
 		554BF52E18F7297500AC2DE0 /* DecodeMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */; };
-		554BF53418F884F900AC2DE0 /* DBGDecodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */; };
+		554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */; };
 		55513FB218FC613F00EAF893 /* EncoderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB118FC613F00EAF893 /* EncoderSpec.m */; };
 		55513FB818FC83C000EAF893 /* EncoderMapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55513FB718FC83C000EAF893 /* EncoderMapSpec.m */; };
 		55632C32190370C500AE50F1 /* RoundTripSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55632C31190370C500AE50F1 /* RoundTripSpec.m */; };
-		BCF84159E977995258262822 /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */; };
+		C9FC0CED214BF55641415D9F /* Pods_DBGHTMLEntitiesExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */; };
+		F3A8ADBFD30879EDB95E35F8 /* Pods_DBGHTMLEntitiesExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,16 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DBGHTMLEntitiesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5513F52B18FDE43F0029581D /* DBGPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGPageViewController.h; sourceTree = "<group>"; };
-		5513F52C18FDE43F0029581D /* DBGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGPageViewController.m; sourceTree = "<group>"; };
-		5513F52E18FDE83E0029581D /* DBGEncodeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGEncodeExampleViewController.h; sourceTree = "<group>"; };
-		5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGEncodeExampleViewController.m; sourceTree = "<group>"; };
-		5513F53118FECDFA0029581D /* DBGLabelHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGLabelHelpers.h; sourceTree = "<group>"; };
-		5513F53218FECDFA0029581D /* DBGLabelHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGLabelHelpers.m; sourceTree = "<group>"; };
+		07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2906CB4021DD52AB006D03AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5513F53118FECDFA0029581D /* DBGLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGLabels.h; sourceTree = "<group>"; };
+		5513F53218FECDFA0029581D /* DBGLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGLabels.m; sourceTree = "<group>"; };
 		5513F535190023690029581D /* DBGHTMLEntityEncoder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DBGHTMLEntityEncoder+Private.h"; path = "../Classes/DBGHTMLEntityEncoder+Private.h"; sourceTree = "<group>"; };
 		5513F536190023BE0029581D /* DBGHTMLEntityDecoder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DBGHTMLEntityDecoder+Private.h"; path = "../Classes/DBGHTMLEntityDecoder+Private.h"; sourceTree = "<group>"; };
 		554BF4EB18F718E600AC2DE0 /* DBGHTMLEntitiesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBGHTMLEntitiesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +68,8 @@
 		554BF52C18F7297500AC2DE0 /* DecodeMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DecodeMapSpec.m; path = ../../Tests/DecodeMapSpec.m; sourceTree = "<group>"; };
 		554BF52F18F744F500AC2DE0 /* DBGHTMLEntityDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityDecoder.h; path = ../Classes/DBGHTMLEntityDecoder.h; sourceTree = "<group>"; };
 		554BF53018F744F500AC2DE0 /* DBGHTMLEntityDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityDecoder.m; path = ../Classes/DBGHTMLEntityDecoder.m; sourceTree = "<group>"; };
-		554BF53218F884F900AC2DE0 /* DBGDecodeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGDecodeExampleViewController.h; sourceTree = "<group>"; };
-		554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGDecodeExampleViewController.m; sourceTree = "<group>"; };
+		554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGExampleViewController.h; sourceTree = "<group>"; };
+		554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBGExampleViewController.m; sourceTree = "<group>"; };
 		55513FB118FC613F00EAF893 /* EncoderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncoderSpec.m; path = ../../Tests/EncoderSpec.m; sourceTree = "<group>"; };
 		55513FB318FC643900EAF893 /* DBGHTMLEntityEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DBGHTMLEntityEncoder.h; path = ../Classes/DBGHTMLEntityEncoder.h; sourceTree = "<group>"; };
 		55513FB418FC643900EAF893 /* DBGHTMLEntityEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityEncoder.m; path = ../Classes/DBGHTMLEntityEncoder.m; sourceTree = "<group>"; };
@@ -84,8 +77,11 @@
 		55513FB618FC7E9300EAF893 /* DBGHTMLEntityEncodeMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DBGHTMLEntityEncodeMap.m; path = ../Classes/DBGHTMLEntityEncodeMap.m; sourceTree = "<group>"; };
 		55513FB718FC83C000EAF893 /* EncoderMapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EncoderMapSpec.m; path = ../../Tests/EncoderMapSpec.m; sourceTree = "<group>"; };
 		55632C31190370C500AE50F1 /* RoundTripSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundTripSpec.m; path = ../../Tests/RoundTripSpec.m; sourceTree = "<group>"; };
-		67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.release.xcconfig"; sourceTree = "<group>"; };
-		7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.debug.xcconfig"; sourceTree = "<group>"; };
+		78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBGHTMLEntitiesExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBGHTMLEntitiesExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample.release.xcconfig"; sourceTree = "<group>"; };
+		D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBGHTMLEntitiesExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +92,7 @@
 				554BF4F118F718E600AC2DE0 /* CoreGraphics.framework in Frameworks */,
 				554BF4F318F718E600AC2DE0 /* UIKit.framework in Frameworks */,
 				554BF4EF18F718E600AC2DE0 /* Foundation.framework in Frameworks */,
-				23C55572782D7810175CC3ED /* libPods-DBGHTMLEntitiesExample.a in Frameworks */,
+				F3A8ADBFD30879EDB95E35F8 /* Pods_DBGHTMLEntitiesExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +103,7 @@
 				554BF50818F718E700AC2DE0 /* XCTest.framework in Frameworks */,
 				554BF50A18F718E700AC2DE0 /* UIKit.framework in Frameworks */,
 				554BF50918F718E700AC2DE0 /* Foundation.framework in Frameworks */,
-				BCF84159E977995258262822 /* libPods-DBGHTMLEntitiesExampleTests.a in Frameworks */,
+				C9FC0CED214BF55641415D9F /* Pods_DBGHTMLEntitiesExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +118,7 @@
 				554BF50D18F718E700AC2DE0 /* DBGHTMLEntitiesExampleTests */,
 				554BF4ED18F718E600AC2DE0 /* Frameworks */,
 				554BF4EC18F718E600AC2DE0 /* Products */,
-				F6680C934C34F65CF6C2BF96 /* Pods */,
+				6103A66A36C038A09DCF26F7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +138,8 @@
 				554BF4F018F718E600AC2DE0 /* CoreGraphics.framework */,
 				554BF4F218F718E600AC2DE0 /* UIKit.framework */,
 				554BF50718F718E700AC2DE0 /* XCTest.framework */,
-				34AF51B655DFE3B09F624D80 /* libPods-DBGHTMLEntitiesExampleTests.a */,
-				1EECAC5ED3C079D931A6E1DB /* libPods-DBGHTMLEntitiesExample.a */,
+				78B465E236D3414F11C270D4 /* Pods_DBGHTMLEntitiesExample.framework */,
+				D3E78F46E47CF1ACDB1A8A42 /* Pods_DBGHTMLEntitiesExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,16 +149,13 @@
 			children = (
 				554BF4FD18F718E600AC2DE0 /* DBGAppDelegate.h */,
 				554BF4FE18F718E600AC2DE0 /* DBGAppDelegate.m */,
+				554BF53218F884F900AC2DE0 /* DBGExampleViewController.h */,
+				554BF53318F884F900AC2DE0 /* DBGExampleViewController.m */,
+				5513F53118FECDFA0029581D /* DBGLabels.h */,
+				5513F53218FECDFA0029581D /* DBGLabels.m */,
 				554BF50018F718E600AC2DE0 /* Images.xcassets */,
+				2906CB4021DD52AB006D03AE /* LaunchScreen.storyboard */,
 				554BF4F518F718E600AC2DE0 /* Supporting Files */,
-				554BF53218F884F900AC2DE0 /* DBGDecodeExampleViewController.h */,
-				554BF53318F884F900AC2DE0 /* DBGDecodeExampleViewController.m */,
-				5513F52B18FDE43F0029581D /* DBGPageViewController.h */,
-				5513F52C18FDE43F0029581D /* DBGPageViewController.m */,
-				5513F52E18FDE83E0029581D /* DBGEncodeExampleViewController.h */,
-				5513F52F18FDE83E0029581D /* DBGEncodeExampleViewController.m */,
-				5513F53118FECDFA0029581D /* DBGLabelHelpers.h */,
-				5513F53218FECDFA0029581D /* DBGLabelHelpers.m */,
 			);
 			path = DBGHTMLEntitiesExample;
 			sourceTree = "<group>";
@@ -217,13 +210,13 @@
 			name = DBGHTMLEntities;
 			sourceTree = "<group>";
 		};
-		F6680C934C34F65CF6C2BF96 /* Pods */ = {
+		6103A66A36C038A09DCF26F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */,
-				50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */,
-				524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */,
-				67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */,
+				62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */,
+				A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */,
+				07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */,
+				9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -235,10 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554BF51718F718E700AC2DE0 /* Build configuration list for PBXNativeTarget "DBGHTMLEntitiesExample" */;
 			buildPhases = (
-				020274342329BBBAE4359AA1 /* [CP] Check Pods Manifest.lock */,
+				463E6CFDF037C7FB32A736C9 /* [CP] Check Pods Manifest.lock */,
 				554BF4E718F718E600AC2DE0 /* Sources */,
 				554BF4E818F718E600AC2DE0 /* Frameworks */,
 				554BF4E918F718E600AC2DE0 /* Resources */,
+				13FC6DFEAC556580C5DABB3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,10 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554BF51A18F718E700AC2DE0 /* Build configuration list for PBXNativeTarget "DBGHTMLEntitiesExampleTests" */;
 			buildPhases = (
-				C6F05643E77C09667C653366 /* [CP] Check Pods Manifest.lock */,
+				D97342C53C6A555CD0C2B3DE /* [CP] Check Pods Manifest.lock */,
 				554BF50218F718E700AC2DE0 /* Sources */,
 				554BF50318F718E700AC2DE0 /* Frameworks */,
 				554BF50418F718E700AC2DE0 /* Resources */,
+				DD89AE161C23A005658B9096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +270,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DBG;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "David Grandinetti";
 				TargetAttributes = {
 					554BF50518F718E700AC2DE0 = {
@@ -306,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2906CB4121DD52AB006D03AE /* LaunchScreen.storyboard in Resources */,
 				554BF4F918F718E600AC2DE0 /* InfoPlist.strings in Resources */,
 				554BF50118F718E600AC2DE0 /* Images.xcassets in Resources */,
 			);
@@ -322,16 +318,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		020274342329BBBAE4359AA1 /* [CP] Check Pods Manifest.lock */ = {
+		13FC6DFEAC556580C5DABB3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		463E6CFDF037C7FB32A736C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DBGHTMLEntitiesExample-checkManifestLockResult.txt",
 			);
@@ -340,22 +362,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6F05643E77C09667C653366 /* [CP] Check Pods Manifest.lock */ = {
+		D97342C53C6A555CD0C2B3DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DBGHTMLEntitiesExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD89AE161C23A005658B9096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -365,12 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554BF53418F884F900AC2DE0 /* DBGDecodeExampleViewController.m in Sources */,
-				5513F53018FDE83E0029581D /* DBGEncodeExampleViewController.m in Sources */,
-				5513F53318FECDFA0029581D /* DBGLabelHelpers.m in Sources */,
+				554BF53418F884F900AC2DE0 /* DBGExampleViewController.m in Sources */,
+				5513F53318FECDFA0029581D /* DBGLabels.m in Sources */,
 				554BF4FF18F718E600AC2DE0 /* DBGAppDelegate.m in Sources */,
 				554BF4FB18F718E600AC2DE0 /* main.m in Sources */,
-				5513F52D18FDE43F0029581D /* DBGPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,12 +478,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -478,12 +530,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -511,14 +565,12 @@
 		};
 		554BF51818F718E700AC2DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 524A7F2E778B5988F5E00E97 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */;
+			baseConfigurationReference = 62A4B0A28FDAE74BA6296B33 /* Pods-DBGHTMLEntitiesExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				INFOPLIST_FILE = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wegoto12.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -527,14 +579,12 @@
 		};
 		554BF51918F718E700AC2DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67B7F47F8866924AAF033981 /* Pods-DBGHTMLEntitiesExample.release.xcconfig */;
+			baseConfigurationReference = A5156041412F593C132EF7AB /* Pods-DBGHTMLEntitiesExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				INFOPLIST_FILE = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wegoto12.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -543,14 +593,9 @@
 		};
 		554BF51B18F718E700AC2DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DEF42E99A1307627F9BCC73 /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 07B716E5A89C5D419DDAE2EC /* Pods-DBGHTMLEntitiesExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBGHTMLEntitiesExample.app/DBGHTMLEntitiesExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -567,14 +612,9 @@
 		};
 		554BF51C18F718E700AC2DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C65B54B2BF788EDCC809E3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */;
+			baseConfigurationReference = 9A247BEB2610883E3FECDED3 /* Pods-DBGHTMLEntitiesExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBGHTMLEntitiesExample.app/DBGHTMLEntitiesExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBGHTMLEntitiesExample/DBGHTMLEntitiesExample-Prefix.pch";
 				INFOPLIST_FILE = "DBGHTMLEntitiesExampleTests/DBGHTMLEntitiesExampleTests-Info.plist";

@@ -1,9 +1,12 @@
 language: objective-c
+os: osx
+osx_image: xcode10.1
 before_install:
     - export LANG=en_US.UTF-8
     - bundle install
     - pod install --project-directory=Example
-script:
-- set -o pipefail
-- xcodebuild -workspace Example/DBGHTMLEntitiesExample.xcworkspace -scheme DBGHTMLEntitiesExample -sdk iphonesimulator -configuration Debug test -destination platform='iOS Simulator',OS='10.0',name='iPhone 7' | xcpretty -c
-- pod lib lint
+xcode_workspace: Example/DBGHTMLEntitiesExample.xcworkspace
+xcode_scheme: DBGHTMLEntitiesExample
+xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
+after_success:
+  - pod lib lint --quick

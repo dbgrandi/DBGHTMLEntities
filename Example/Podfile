@@ -1,11 +1,12 @@
 platform :ios, '11.0'
+use_frameworks!
 
 target :DBGHTMLEntitiesExample do
   pod "DBGHTMLEntities", :path => "../DBGHTMLEntities.podspec"
-  pod 'ORStackView'
 end
 
 target :DBGHTMLEntitiesExampleTests do
+  pod "DBGHTMLEntities", :path => "../DBGHTMLEntities.podspec"
   pod 'Specta',  '~> 1.0'
   pod 'Expecta', '~> 1.0'
 end
