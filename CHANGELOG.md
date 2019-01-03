@@ -1,5 +1,8 @@
 # DBGHTMLEntities CHANGELOG
 
+## 1.1.1
+- Fix infinite loop with empty or nil string (@adamkaplan)
+
 ## 1.1.0
 
 - Add support for unicode emoji (@salagadoola)
