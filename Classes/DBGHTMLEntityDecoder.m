@@ -30,6 +30,7 @@ static NSString *DBGEntityRegexString = @"&(?:([a-z][a-z0-9]{1,7})|#([0-9]{1,7})
 }
 
 - (NSString *)decodeString:(NSString *)string {
+    if (string.length == 0) { return @""; };
     NSMutableString *mutableString = [string mutableCopy];
     [self decodeStringInPlace:mutableString];
 
