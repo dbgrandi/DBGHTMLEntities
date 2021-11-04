@@ -15,6 +15,8 @@
  * The default encoder uses Named | Decimal, favoring Named if a
  * mapping exists.
  */
+#import <Foundation/Foundation.h>
+
 typedef NS_OPTIONS(NSUInteger, DBGHTMLEntityEncoderFormats) {
     DBGHTMLEntityEncoderNamedFormat = 1 << 0,
     DBGHTMLEntityEncoderDecimalFormat = 1 << 1,

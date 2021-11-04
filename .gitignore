@@ -25,3 +25,8 @@ Pods/
 # bundler
 .bundle/
 vendor/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
