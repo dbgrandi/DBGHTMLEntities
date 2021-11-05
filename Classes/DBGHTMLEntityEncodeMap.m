@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 David Grandinetti. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "DBGHTMLEntityEncodeMap.h"
 #import "DBGHTMLEntityDecodeMap.h"
 

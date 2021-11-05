@@ -323,21 +323,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBGHTMLEntitiesExample/Pods-DBGHTMLEntitiesExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		463E6CFDF037C7FB32A736C9 /* [CP] Check Pods Manifest.lock */ = {
@@ -389,17 +385,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DBGHTMLEntities/DBGHTMLEntities.framework",
 				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
 				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBGHTMLEntities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
@@ -407,7 +399,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DBGHTMLEntitiesExampleTests/Pods-DBGHTMLEntitiesExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

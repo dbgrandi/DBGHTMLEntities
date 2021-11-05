@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 David Grandinetti. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface DBGHTMLEntityDecodeMap : NSObject
 
 /**
