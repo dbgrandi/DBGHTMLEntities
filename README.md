@@ -1,6 +1,7 @@
 # DBGHTMLEntities
 
-[![Build Status](https://travis-ci.org/dbgrandi/DBGHTMLEntities.svg?branch=master)](https://travis-ci.org/dbgrandi/DBGHTMLEntities)
+[![Build Status](https://github.com/dbgrandi/DBGHTMLEntities/workflows/DBGHTMLEntities%20CI/badge.svg?branch=master)](https://github.com/dbgrandi/DBGHTMLEntities/actions)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Version](http://cocoapod-badges.herokuapp.com/v/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DBGHTMLEntities/badge.png)](http://cocoadocs.org/docsets/DBGHTMLEntities)
 
@@ -45,10 +46,16 @@ tweetLabel.attributedText = tweetString;
 
 ## Installation
 
+### CocoaPods
+
 DBGHTMLEntities is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
     pod "DBGHTMLEntities"
+
+### SwiftPM
+
+Add `.package(url: "https://github.com/dbgrandi/DBGHTMLEntities.git", from: "1.2.0")` to your `package.swift`
 
 ## Author
 
