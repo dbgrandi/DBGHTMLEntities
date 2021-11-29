@@ -1,5 +1,8 @@
 # DBGHTMLEntities CHANGELOG
 
+## 1.2.0
+- Add SwiftPM support (@master-nevi)
+
 ## 1.1.1
 - Fix infinite loop with empty or nil string (@adamkaplan)
 
